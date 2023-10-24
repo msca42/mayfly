@@ -27,5 +27,5 @@ print(price)
 fen = int(input("please input your fen money number"))
 jiao = int(input("please input your jiao money number"))
 yuan = int(input("please input your yuan money number"))
-total_money = yuan + jiao / 10 + fen / 100;
+total_money = yuan + jiao / 10 + fen / 100
 print(total_money)
