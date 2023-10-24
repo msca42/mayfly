@@ -92,3 +92,21 @@
 ## 输入
 * input()
   * 内置函数、用户输入
+
+---- 
+
+## GUI
+* easygui
+  * 导入easygui模块
+    * import easygui
+  * 创建简单消息框
+    * msgbox()函数
+  * 创建按钮框
+    * buttonbox()函数
+  * 创建选择框
+    * choicebox()函数
+  * 创建文本输入框
+    * enterbox()函数
+  * 创建整数框
+    * integerbox()函数
+    * 可是设置上界和下界
