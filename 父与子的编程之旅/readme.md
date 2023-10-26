@@ -360,3 +360,11 @@ if num1 < variable < num2:
   * 在Pygame模块中，就是KEYDOWN事件
 * 鼠标事件
 * 定时器事件
+----
+## 声音
+* Pygame模块中有一个处理声音的模块pygame.mixer
+* 支持多种类型的声音文件
+  * 波形文件.wav
+  * MP3文件
+  * WMA文件
+  * Ogg Vorbis文件
