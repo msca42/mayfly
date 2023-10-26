@@ -31,6 +31,7 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+        # 使用定时器事件控制球的上下移动
         elif event.type == pygame.USEREVENT:
             my_ball.rect.centery = my_ball.rect.centery + (30 * direction)
             if my_ball.rect.top <= 0 or \

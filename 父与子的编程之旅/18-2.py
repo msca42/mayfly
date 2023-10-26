@@ -24,17 +24,24 @@ class Ball(pygame.sprite.Sprite):
 
 
 my_ball = Ball('beach_ball.png', [10, 0], [20, 20])
+# 重复按键之间需要等待事件
 delay = 100
+# 按键的重复频率
 interval = 50
+# 处理重复按键
 pygame.key.set_repeat(delay, interval)
 running = True
 while running:
+    # 从事件队列获取包含所有事件的列表
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+        # 检查按键
         elif event.type == pygame.KEYDOWN:
+            # 如果是UP按键
             if event.key == pygame.K_UP:
                 my_ball.rect.top = my_ball.rect.top - 10
+            # 如果是DOWN按键
             elif event.key == pygame.K_DOWN:
                 my_ball.rect.top = my_ball.rect.top + 10
 

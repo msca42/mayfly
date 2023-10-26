@@ -1,9 +1,14 @@
 import pygame, sys
 
+# 初始化
 pygame.init()
+# 绘制屏幕
 screen = pygame.display.set_mode([640, 480])
+# 绘制画布
 background = pygame.Surface(screen.get_size())
+# 填充白色背景
 background.fill([255, 255, 255])
+# 循环事件
 clock = pygame.time.Clock()
 
 
@@ -30,6 +35,7 @@ while running:
         if event.type == pygame.QUIT:
             running = False
     clock.tick(30)
+    # 擦除
     screen.blit(background,(0,0))
     my_ball.move()
     screen.blit(my_ball.image,my_ball.rect)

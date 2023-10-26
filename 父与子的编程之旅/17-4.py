@@ -1,7 +1,7 @@
 import sys, pygame
 from random import choice
 
-
+# 添加了帧速率
 class Ball(pygame.sprite.Sprite):
     def __init__(self, image_file, location, speed):
         pygame.sprite.Sprite.__init__(self)
@@ -31,10 +31,12 @@ def animate(group):
         screen.blit(ball.image, ball.rect)
     pygame.display.flip()
 
+
 size = width, height = 640, 480
 screen = pygame.display.set_mode(size)
 screen.fill([255, 255, 255])
 img_file = "beach_ball.png"
+# 控制帧速率，循环事件
 clock = pygame.time.Clock()
 group = pygame.sprite.Group()
 for row in range(0, 3):
@@ -49,8 +51,10 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+            # 检查帧速率
             frame_rate = clock.get_fps()
             print("frame rate =", frame_rate)
     animate(group)
+    # 指定循环事件
     clock.tick(30)
 pygame.quit()
