@@ -368,3 +368,40 @@ if num1 < variable < num2:
   * MP3文件
   * WMA文件
   * Ogg Vorbis文件
+---- 
+## 更多GUI
+* 使用PyQt模块创建GUI程序
+---- 
+## 打印格式化与字符串
+* 换行 
+  * \n
+  * print()
+* 不换行
+  * print("",end='')
+* 制表符
+  * \t
+* 在字符串中插入变量
+```python
+name = 'Warren Sande'
+print("My name is", name,"and I wrote this book")
+# 格式化
+print("My name is %s and I wrote this book" %name)
+# f-string
+print(f"My name is {name} and I wrote this book")
+```
+* 字符串处理办法
+  * 分离方法
+    * split('间隔符')
+  * 拼接字符串
+    * + 
+    * join()
+  * 搜索字符串
+    * startswith()
+    * endswith()
+    * in 
+    * index()
+  * 删除字符串的一部分
+    * strip()
+  * 改变大小写
+    * lower()
+    * upper()
