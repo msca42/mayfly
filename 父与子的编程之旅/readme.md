@@ -437,3 +437,6 @@ print(f"My name is {name} and I wrote this book")
 * 两种随机方式
   * random.randint() 随机选择一个整数
   * random.choice() 从列表中随机选择一项
+---- 
+## 使用套接字建立网络连接
+* 将文本转换为字节数据，需要规定编码格式
