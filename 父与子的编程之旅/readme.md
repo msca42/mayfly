@@ -389,6 +389,8 @@ print("My name is %s and I wrote this book" %name)
 # f-string
 print(f"My name is {name} and I wrote this book")
 ```
+* f-string 数字格式化方法 
+  * {variable:.2f}
 * 字符串处理办法
   * 分离方法
     * split('间隔符')
@@ -412,7 +414,7 @@ print(f"My name is {name} and I wrote this book")
 * 打开文件
   * open('文件名'，'模式')
   * r: 打开文件并完成读操作
-  * rb：打开文件以二进制模式读取内容
+  * b：打开文件以二进制模式处理内容
   * w: 打开文件并完成写操作
   * a: 打开文件并完成追加操作
 * 读文件
@@ -430,3 +432,8 @@ print(f"My name is {name} and I wrote this book")
   * write()、print()
   * 写操作： 创建新文件或覆盖原有文件
   * 追加操作： 在现有文件中添加内容，保留已有内容
+----
+## 碰运气--随机性
+* 两种随机方式
+  * random.randint() 随机选择一个整数
+  * random.choice() 从列表中随机选择一项
