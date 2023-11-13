@@ -1,6 +1,8 @@
 # 列表
   # 一系列按照特定顺序排列的元素组成
   # 使用[]表示列表
+  # 存储在程序运行期间可能变化的数据集
+  # 可以修改
 bicycles = ['trek','cannondale','redline','specialized']
 print(bicycles)
 
