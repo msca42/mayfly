@@ -1,0 +1,2 @@
+name = "mayfly"
+print(name)
