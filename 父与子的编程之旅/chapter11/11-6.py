@@ -1,0 +1,1 @@
+print("\tDog \tBun \tKetchu\tMustard\tOnions")
