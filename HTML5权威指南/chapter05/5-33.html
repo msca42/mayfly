@@ -1,0 +1,19 @@
+<!-- 
+  undefined
+    读取未赋值的变量或者试图读取对象没有的属性
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example</title>
+  </head>
+  <body>
+    <script>
+      var myData = {
+        name: "Adam",
+        weather: "sunny",
+      }
+      document.writeln("Prop: " + myData.doesntexist);
+    </script>
+  </body>
+</html>
