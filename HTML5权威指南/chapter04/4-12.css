@@ -1,0 +1,8 @@
+/*  用户样式
+  浏览器允许用户定义自己的样式表 */
+a {
+  color: white;
+  background: grey;
+  text-decoration: none;
+  padding: 2px;
+}
