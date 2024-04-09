@@ -1,0 +1,20 @@
+<!--  
+  表单外元素
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example</title>
+    <meta name="author" content="Adam Freeman">
+    <meta name="description">
+  </head>
+  <body>
+    <form id="voteform" method="post" action="http://titan:8080/form">
+      <p><label for="fave">Fruit:<input  autofocus name="fave" id="fave"></label></p>
+      <p><label for="name">Name:<input  name="name" disabled id="name"></label></p>
+     
+    </form>
+    <button form="voteform" type="submit">Submit Vote</button>
+    <button form="voteform" type="reset">Reset</button>
+  </body>
+</html>
