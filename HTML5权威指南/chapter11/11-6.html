@@ -1,0 +1,63 @@
+<!--  
+  thead、tbody、tfoot
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example</title>
+    <meta name="author" content="Adam Freeman">
+    <meta name="description" content="A simple example">
+    <style>
+      thead  th,tfoot th {
+        text-align: left;
+        background: grey;
+        color: white;
+      }
+      tbody  th {
+        text-align: right;
+        background-color: lightgrey;
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Color</th>
+          <th>Size</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Color</th>
+          <th>Size</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <th>Favorite:</th>
+          <td>Apples</td>
+          <td>Green</td>
+          <td>Medium</td>
+        </tr>
+        <tr>
+          <th>2nd Favorite:</th>
+          <td>Oranges</td>
+          <td>Orange</td>
+          <td>Large</td>
+        </tr>
+        <tr>
+          <th>3nd Favorite:</th>
+          <td>Pomegranate</td>
+          <td>A kind pf greeny-red</td>
+          <td>Varies from medium to large</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
