@@ -1,0 +1,21 @@
+<!--  
+  output 显示计算结果
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example</title>
+    <meta name="author" content="Adam Freeman">
+    <meta name="description" content="A simple example">
+  </head>
+  <body>
+    <form onsubmit="return false" oninput="res.value = quant.valueAsNumber * price.valueAsNumber">
+      <fieldset>
+        <legend>Price Calculator</legend>
+        <input type="number" placeholder="Quantity" id="quant" name="quant"/>
+        <input type="number" placeholder="Price" id="price" name="price"/>
+        <output for="quant name" name="res"></output>
+      </fieldset>
+    </form>
+  </body>
+</html>

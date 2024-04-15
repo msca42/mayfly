@@ -1,0 +1,42 @@
+<!--  
+  optgroup
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example</title>
+    <meta name="author" content="Adam Freeman">
+    <meta name="description" content="A simple example">
+  </head>
+  <body>
+    <form action="post" action="http://titan:8080/form">
+      <input type="hidden" name="recordID" value="1234">
+      <p>
+        <label for="name">
+          Name: <input type="text" value="Adam" id="name" name="name">
+        </label>
+      </p>
+      <p>
+        <label for="password">
+          Password: <input type="password">
+        </label>
+      </p>
+      <p>
+        <label for="fave" style="vertical-align: top;">
+          Favorite Fruit:
+          <select id="fave" name="fave" >
+            <optgroup label="Top Choices">
+              <option value="apples" selected label="Apples">Apples</option>
+              <option value="oranges" label="Oranges">Oranges</option>
+            </optgroup>
+            <optgroup label="Others">
+              <option value="cherries" label="Cherries">Cherries</option>
+              <option value="pears" label="Pears">Pears</option>
+            </optgroup>
+          </select>
+        </label>
+      </p>
+    </form>
+  </body>
+</html>
+
