@@ -1,0 +1,33 @@
+<!--  
+input生成按钮
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example</title>
+    <meta name="author" content="Adam Freeman">
+    <meta name="description">
+  </head>
+  <body>
+    <form action="post" action="http://titan:8080/form">
+      <p>
+        <label for="name">
+          Name: <input value="Adam"  disabled id="name" name="name">
+        </label>
+      </p>
+      <p>
+        <label for="password">
+          Password: <input  placeholder="Min 6 characters" id="password" name="password">
+        </label>
+      </p>
+      <p>
+        <label for="fave">
+          Fruit: <input value="Apple" id="fave" name="fave">
+        </label>
+      </p>
+      <input type="submit" value="Submit Vote">
+      <input type="reset" value="Reset Form">
+      <input type="button" value="My Button">
+    </form>
+  </body>
+</html>
