@@ -1,0 +1,23 @@
+# 初探HTML
+## 元素的组成
+## 元素的属性
+- 布尔属性
+- 自定义属性
+- 全局属性
+  - accesskey
+  - class
+  - contenteditable
+  - dir
+  - hidden
+  - id
+  - lang
+  - spellcheck
+  - style
+  - tabindex
+  - title
+## HTML文档结构
+  - 文档类型声明
+  - html元素
+  - head元素
+  - body元素
+## HTML实体
