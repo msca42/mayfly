@@ -1,0 +1,15 @@
+print('a' == 'a')
+print('a' != 'a')
+print('a'.lower() == 'a'.lower())
+print(2 == 1)
+print(2 != 1)
+print(2 > 1)
+print(2 < 1)
+print(2 >= 1)
+print(2 <= 1)
+
+print(2 > 1 and 3 > 2)
+print(2 > 1 or 3 > 2)
+
+print('a' in ['a'])
+print('a' not in ['b'])
