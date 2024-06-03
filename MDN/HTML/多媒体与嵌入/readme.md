@@ -36,9 +36,17 @@
   - WebM 容器包括 Vorbis 或 Opus 音频和 VP8/VP9 视频
   - MP4 容器包括 AAC 或 MP3 音频和 H.264 视频
   - Ogg 容器倾向于使用 Vorbis 音频和 Theora 视频
-  - MP3文件实际存储在MPEG或MPEG-2容器中的音频轨道上
+  - MP3 文件实际存储在 MPEG 或 MPEG-2 容器中的音频轨道上
 
 ## 其他嵌入技术
+- 历史
+  - 最早使用框架来搭建HTML页面
+  - 后来插件技术流行，例如Java Applet和Flash,嵌入技术通过object元素和embed元素实现
+  - 最后，iframe元素出现
+- iframe
+  - 作用: 将其他Web文档嵌入当当前文档中
+  - 存在安全隐患: 点击劫持
+
 
 ## 矢量图像
 
