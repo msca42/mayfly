@@ -11,3 +11,5 @@
 ## <wchar.h> 扩展的多字符和宽字符
 
 ## <wctype.h> 宽字符分类和映射实用工具
+
+## <uchar.h> 改进的 Unicode 支持
