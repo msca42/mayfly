@@ -2,15 +2,18 @@
 
 int main(void)
 {
+  int amount;
   printf("Enter a dollar amount: ");
-  int dollar_number;
-  scanf("%d", &dollar_number);
-  int number_20 = dollar_number / 20;
-  int number_10 = (dollar_number - number_20 * 20) / 10;
-  int number_5 = (dollar_number - number_20 * 20 - number_10 * 10) / 5;
-  int number_1 = (dollar_number - number_20 * 20 - number_10 * 10 - number_5 * 5);
-  printf("$20 bills: %d\n", number_20);
-  printf("$10 bills: %d\n", number_10);
-  printf("$5 bills: %d\n", number_5);
-  printf("$1 bills: %d\n", number_1);
+
+  scanf("%d", &amount);
+
+  int twenty_note = amount / 20;
+  int ten_note = (amount - twenty_note * 20) / 10;
+  int five_note = (amount - twenty_note * 20 - ten_note * 10) / 5;
+  int one_note = (amount - twenty_note * 20 - ten_note * 10 - five_note * 5);
+  printf("$20 bills: %d\n", twenty_note);
+  printf("$10 bills: %d\n", ten_note);
+  printf("$5 bills: %d\n", five_note);
+  printf("$1 bills: %d\n", one_note);
+  return 0;
 }

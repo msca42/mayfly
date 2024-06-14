@@ -1,4 +1,4 @@
-/* Computes the dimensional weighr of a 12" x 10" x 8" box*/
+/* Computes the dimensional weight of a 12" x 10" x 8" box*/
 
 #include <stdio.h>
 

@@ -2,21 +2,24 @@
 
 int main(void)
 {
-
+  float loan, rate, mpayment;
   printf("Enter amount of loan: ");
-  float amount;
-  scanf("%f", &amount);
+  scanf("%f", &loan);
   printf("Enter interest rate: ");
-  float rate;
   scanf("%f", &rate);
   printf("Enter monthly payment: ");
-  float payment;
-  scanf("%f", &payment);
+  scanf("%f", &mpayment);
 
-  float first_remain = (amount - payment) * (1 + rate / 100 / 12);
-  float second_remain = (first_remain - payment) * (1 + rate / 100 / 12);
-  float third_remain = (second_remain - payment) * (1 + rate / 100 / 12);
-  printf("Balance remaining after first payment: $%.2f\n", first_remain);
-  printf("Balance remaining after second payment: $%.2f\n", second_remain);
-  printf("Balance remaining after third payment: $%.2f\n", third_remain);
+  float mrate = rate / 1200;
+
+  float remain_1 = loan + loan * mrate - mpayment;
+
+  float remain_2 = remain_1 + remain_1 * mrate - mpayment;
+
+  float remain_3 = remain_2 + remain_2 * rate - mpayment;
+  printf("Balance remaining after first payment: $%.2f\n", remain_1);
+  printf("Balance remaining after second payment: $%.2f\n", remain_2);
+  printf("Balance remaining after third payment: $%.2f\n", remain_3);
+
+  return 0;
 }
