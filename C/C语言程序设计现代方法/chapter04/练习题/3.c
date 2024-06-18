@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main(void)
+{
+  printf("%d\n", 8 / 5);   // 1
+  printf("%d\n", -8 / 5);  // -1、-2
+  printf("%d\n", 8 / -5);  // -1、-2
+  printf("%d\n", -8 / -5); // 1
+}
