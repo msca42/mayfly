@@ -24,6 +24,6 @@ int main(void)
 
   if (commission < 39.00f)
     commission = 39.00f;
-  printf("Commmission: $%.2f\n", commission);
+  printf("Commission: $%.2f\n", commission);
   return 0;
 }
