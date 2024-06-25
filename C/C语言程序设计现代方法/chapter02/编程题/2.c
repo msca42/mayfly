@@ -1,3 +1,4 @@
+/* 宏定义、声明、赋值、初始化、打印输出 */
 #include <stdio.h>
 #define PI 3.14f
 

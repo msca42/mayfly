@@ -1,3 +1,4 @@
+/* 利用printf和scanf解决计算问题 */
 #include <stdio.h>
 
 int main(void)

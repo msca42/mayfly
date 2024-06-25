@@ -1,3 +1,4 @@
+/* 初始化值 */
 #include <stdio.h>
 
 int main(void)

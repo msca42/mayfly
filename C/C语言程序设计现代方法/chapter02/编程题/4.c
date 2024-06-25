@@ -1,3 +1,4 @@
+/* scanf 和 printf函数 */
 #include <stdio.h>
 
 int main(void)

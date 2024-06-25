@@ -1,3 +1,4 @@
+/* 变量、赋值、初始化 */
 #include <stdio.h>
 
 int main(void)

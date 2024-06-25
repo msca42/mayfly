@@ -1,3 +1,4 @@
+/* 在之前的基础上加上scanf函数的应用 */
 /* Computes the dimensional weight of a box from input provided by the user */
 
 #include <stdio.h>

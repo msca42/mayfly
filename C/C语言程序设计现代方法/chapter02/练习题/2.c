@@ -1,3 +1,4 @@
+/* 认识程序的一般形式，识别指令和语句 */
 /*
 Parkinson's Law:
 Work expands so as to fill the time

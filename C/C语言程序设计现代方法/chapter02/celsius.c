@@ -1,3 +1,4 @@
+/* 使用宏定义命名常量 */
 /* Converts a Fahrenheit temperature to Celsius */
 
 #include <stdio.h>

@@ -1,3 +1,4 @@
+/* 在5.c基础上，修改表达式*/
 #include <stdio.h>
 
 int main(void)

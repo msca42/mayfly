@@ -1,3 +1,4 @@
+/* 在2.c的基础上，增加了用户输入 */
 #include <stdio.h>
 #define PI 3.14f
 

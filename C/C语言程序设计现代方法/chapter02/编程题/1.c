@@ -1,3 +1,4 @@
+/* printf函数 打印字面量 */
 #include <stdio.h>
 
 int main(void)

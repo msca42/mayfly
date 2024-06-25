@@ -1,3 +1,4 @@
+/* 声明、 printf、 scanf  表达式赋值 */
 #include <stdio.h>
 
 int main(void)

@@ -1,3 +1,4 @@
+/* HelleWorld 程序 ，作用: 让初学者体验运行一个C语言程序的完整流程 */
 /* Name: pun.c                 */
 /* Purpose: Prints  a bad pun. */
 /* Author: K. N. King          */

@@ -1,3 +1,4 @@
+/* 介绍: 变量的声明、赋值与打印显示 */
 /* Computes the dimensional weight of a 12" x 10" x 8" box*/
 
 #include <stdio.h>
