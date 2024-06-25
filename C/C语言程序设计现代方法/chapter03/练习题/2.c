@@ -1,3 +1,4 @@
+/* Printf格式化输出*/
 #include <stdio.h>
 
 int main(void)

@@ -1,3 +1,4 @@
+/* Printf格式化输出*/
 #include <stdio.h>
 
 int main(void)
@@ -9,5 +10,5 @@ int main(void)
   // c:83.1620
   printf("%.4f\n", 83.162);
   // d:1e-06
-  printf("%-6.2g\n", .0000009979);
+  printf("%-6.2gTest\n", .0000009979);
 }

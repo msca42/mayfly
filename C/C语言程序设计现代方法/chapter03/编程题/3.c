@@ -1,3 +1,4 @@
+/* printf的格式串 */
 #include <stdio.h>
 
 int main(void)

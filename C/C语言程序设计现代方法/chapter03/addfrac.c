@@ -1,3 +1,4 @@
+/* scanf的模式匹配*/
 /* Adds two fractions */
 
 #include <stdio.h>

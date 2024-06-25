@@ -1,3 +1,4 @@
+/* scanf 普通字符*/
 /* Adds two fractions */
 
 #include <stdio.h>

@@ -1,4 +1,6 @@
+/* Printf函数占位符 */
 /* Prints int and float values in various formats */
+
 
 #include <stdio.h>
 

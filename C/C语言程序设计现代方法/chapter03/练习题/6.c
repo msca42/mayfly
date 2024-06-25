@@ -1,3 +1,4 @@
+/* scanf的匹配机制 %d空格位符号位%d */
 /* Adds two fractions */
 
 #include <stdio.h>

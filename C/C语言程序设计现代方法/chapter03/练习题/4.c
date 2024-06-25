@@ -1,3 +1,4 @@
+/* scanf的匹配机制 */
 #include <stdio.h>
 
 int main(void)
