@@ -1,6 +1,8 @@
 # 操作列表
 
 ## 遍历整个列表
+- for循环
+  - 格式 for value in values:
 
 ## 避免缩进错误
 
