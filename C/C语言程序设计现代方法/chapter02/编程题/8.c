@@ -17,7 +17,7 @@ int main(void)
 
   float remain_2 = remain_1 + remain_1 * mrate - mpayment;
 
-  float remain_3 = remain_2 + remain_2 * rate - mpayment;
+  float remain_3 = remain_2 + remain_2 * mrate - mpayment;
   printf("Balance remaining after first payment: $%.2f\n", remain_1);
   printf("Balance remaining after second payment: $%.2f\n", remain_2);
   printf("Balance remaining after third payment: $%.2f\n", remain_3);
