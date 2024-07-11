@@ -15,7 +15,7 @@ int main(void)
   number = number / 8;
   r1 = number % 8;
   number = number / 8;
-  printf("In octal, your number is: %d%d%d%d%d", r1, r2, r3, r4, r5);
+  printf("In octal, your number is: %d%d%d%d%d\n", r1, r2, r3, r4, r5);
 
   return 0;
 }

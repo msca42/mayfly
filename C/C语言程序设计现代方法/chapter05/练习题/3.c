@@ -22,7 +22,7 @@ int main(void)
   j = 8;
   k = 9;
   printf("%d", (i = j) || (j = k)); // 1
-  printf("%d %d %d", i, j, k);      // 7 8 9
+  printf("%d %d %d", i, j, k);      // 8 8 9
 
   // d
   i = 1;
