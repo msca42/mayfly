@@ -1,29 +1,58 @@
 #include <stdio.h>
+#include <ctype.h>
 
 int main(void)
 {
-  char c;
-  int sum = 0;
-  printf("Enter a word: ");
-  while ((c = getchar()) != '\n')
-  {
-    c = toupper(c);
-    if (c == 'D' || c == 'G')
-      sum += 2;
-    else if (c == 'J' || c == 'X')
-      sum += 8;
-    else if (c == 'Q' || c == 'Z')
-      sum += 10;
-    else if (c == 'K')
-      sum += 5;
-    else if (c == 'B' || c == 'C' || c == 'M' || c == 'P')
-      sum += 3;
-    else if (c == 'F' || c == 'H' || c == 'V' || c == 'W' || c == 'Y')
-      sum += 4;
-    else
-      sum += 1;
-  }
+    char c;
+    int sum = 0;
+    printf("Enter a word: ");
+    while ((c=getchar()) != '\n')
+    {   
+        switch (toupper(c))
+        {
+        case 'A':
+        case 'E':
+        case 'I':
+        case 'L':
+        case 'N':
+        case 'O':
+        case 'R':
+        case 'S':
+        case 'T':
+        case 'U':
+            sum += 1;
+            break;
+        case 'D':
+        case 'G':
+            sum += 2;
+            break;
+        case 'B':
+        case 'C':
+        case 'M':
+        case 'P':
+            sum +=3;
+            break;
+        case 'F':
+        case 'H':
+        case 'V':
+        case 'W':
+        case 'Y':
+            sum += 4;
+            break;
+        case 'K':
+            sum += 5;
+            break;
+        case 'J':
+        case 'X':
+            sum += 8;
+            break;
+        case 'Q':
+        case 'Z':
+            sum += 10;
+            break;
+        }
+    }
 
-  printf("Scrabble value: %d", sum);
-  return 0;
+    printf("Scrabble value: %d\n",sum);
+    return 0;
 }

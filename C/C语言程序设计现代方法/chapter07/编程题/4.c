@@ -1,31 +1,58 @@
-#include <stdint.h>
+#include <stdio.h>
 
 int main(void)
 {
-  char c;
-  printf("Enter phone number:  ");
-
-  while ((c = getchar()) != '\n')
-  {
-    if (c >= 'A' && c <= 'C')
-      printf("%d", 2);
-    else if (c >= 'D' && c <= 'F')
-      printf("%d", 3);
-    else if (c >= 'G' && c <= 'I')
-      printf("%d", 4);
-    else if (c >= 'J' && c <= 'L')
-      printf("%d", 5);
-    else if (c >= 'M' && c <= 'O')
-      printf("%d", 6);
-    else if (c >= 'P' && c <= 'S')
-      printf("%d", 7);
-    else if (c >= 'T' && c <= 'V')
-      printf("%d", 8);
-    else if (c >= 'W' && c <= 'Z')
-      printf("%d", 9);
-    else
-      printf("%c", c);
-  }
-
-  return 0;
+    char c;
+    printf("Enter phone number: ");
+    while (( c = getchar()) != '\n')
+    {
+        switch (c)
+        {
+        case 'A':
+        case 'B':
+        case 'C':
+            printf("%d",2);
+            break;
+        case 'D':
+        case 'E':
+        case 'F':
+            printf("%d",3);
+            break;
+        case 'G':
+        case 'H':
+        case 'I':
+            printf("%d",4);
+            break;
+        case 'J':
+        case 'K':
+        case 'L':
+            printf("%d",5);
+            break;
+        case 'M':
+        case 'N':
+        case 'O':
+            printf("%d",6);
+            break;
+        case 'P':
+        case 'Q':
+        case 'R':
+        case 'S':
+            printf("%d",7);
+            break;
+        case 'T':
+        case 'U':
+        case 'V':
+            printf("%d",8);
+            break;
+        case 'W':
+        case 'X':
+        case 'Y':
+        case 'Z':
+            printf("%d",9);
+            break;
+        default:
+            printf("%c",c);
+        }
+    }
+    
 }
