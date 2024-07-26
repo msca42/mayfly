@@ -9,7 +9,7 @@
   - inputChoice()、inputMenu()
   - inputDatetime()、inputYesNo()
   - inputBool()、inputEmail()
-  - inputFilepath
+  - inputFilepath()、inputPassword()
 - 关键字参数
   - max、min、greaterThan 和 lessThan
   - blank=True 可以输入空格
