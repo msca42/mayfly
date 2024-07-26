@@ -9,3 +9,12 @@
 被400整除。这种计算使得用大小合理的正则表达式来检测有效日期成为不可能的事，请
 注意原因。
 """
+import re
+month = input('please input month')
+day = input('please input day')
+year = input('please input year')
+
+dmy = re.compile(r'^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[012])/(19|2[0-9])\d\d$')
+mo1 = dmy.search(day + '/'+  month + '/' + year)
+print(mo1.group())
+
