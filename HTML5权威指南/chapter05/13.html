@@ -1,0 +1,22 @@
+<!-- 读取和修改对象的值 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example</title>
+    </head>
+    <body>
+        <script>
+            var myData = {
+                name : "Adam",
+                weather: "sunny",
+            };
+            myData.name = "Joe";
+            myData["weather"] = "raining";
+
+            document.writeln("Hello " + myData.name + ". ");
+            document.writeln("It is " + 
+                myData["weather"]
+            );
+        </script>
+    </body>
+</html>

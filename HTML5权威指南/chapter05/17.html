@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example</title>
+    </head>
+    <body>
+        <script>
+            var myData = {
+                name: "Adam",
+                weather: "sunny",
+            };
+            myData.sayHello = function(){
+                document.writeln("Hello");
+            };
+            delete myData.name;
+            delete myData["weather"];
+            delete myData.sayHello;
+        </script>
+    </body>
+</html>
