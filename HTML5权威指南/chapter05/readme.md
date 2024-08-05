@@ -1,5 +1,7 @@
 # 初探 JavaScript
-
+- 深入学习JavaScript推荐材料
+    - 《JavaScript权威指南(第六版)》
+    - 《JavaScript设计模式》
 ## 准备使用 JavaScript
 
 ## 使用语句
