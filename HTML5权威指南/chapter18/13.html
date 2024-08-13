@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example</title>
+        <meta name="author" content="Adam Freeman" />
+        <meta name="description" content="A simple example" />
+        <style>
+            :in-range {
+                outline: medium solid green;
+            }
+            :out-of-range {
+                outline: medium solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="http://titan:8080/form">
+            <p>
+                <label for="price1">
+                    $ per unit in your area:
+                    <input type="number" min="0" max="100" value="1" id="price" name="price">
+                </label>
+                <label for="price2">
+                    $ per unit in your area:
+                    <input type="number" min="0" max="100" value="1" id="price" name="price">
+                </label>
+            </p>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
