@@ -1,12 +1,17 @@
-/* 宏定义、声明、赋值、初始化、打印输出 */
-#include <stdio.h>
-#define PI 3.14f
+/*
+ * Name: 2.c 
+ * Purpose: 编写一个计算球体体积的程序
+ * Author: mayfly
+ * Description: r = 10m V = 4/3 *  pi *  r^3
+ */
 
-int main(void)
+#include <stdio.h>
+#define PI 3.14
+
+int main(void) 
 {
-  int radius = 10;
-  int radius3 = radius * radius * radius;
-  float volume = (4.0f / 3.0f) * PI * radius3;
-  printf("The Volume of ball is %f cubic metre.\n", volume);
-  return 0;
+  int r = 10;
+  float V = (4.0 / 3.0) * PI * r * r * r;
+
+  printf("球体体积是: %f\n", V);
 }

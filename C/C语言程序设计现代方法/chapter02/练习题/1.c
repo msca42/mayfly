@@ -1,11 +1,15 @@
-/* HelloWorld 执行程序 */
 /*
-  编译时可能会因为没有return int类型提示
-  warning: non-void function does not return a value [-Wreturn-type]
-*/
+ * Name: 1.c 
+ * Purpose: print helloworld
+ * Author: mayfly
+ */
+
 #include <stdio.h>
 
 int main(void)
 {
-  printf("hello,world\n");
+  printf("hello, world\n");
 }
+/*
+Description: 编译时未出现警告信息， 可能出现的问题，没有返回值语句return 0
+*/

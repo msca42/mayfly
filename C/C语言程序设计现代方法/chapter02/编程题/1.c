@@ -1,4 +1,8 @@
-/* printf函数 打印字面量 */
+/*
+ * Name: 1.c 
+ * Purpose: 打印图形六行八列的勾
+ * Author: mayfly
+ */
 #include <stdio.h>
 
 int main(void)
@@ -8,6 +12,7 @@ int main(void)
   printf("     *\n");
   printf("*   *\n");
   printf(" * *\n");
-  printf("  *\n");
-  return 0;
+  printf("  * \n");
 }
+
+

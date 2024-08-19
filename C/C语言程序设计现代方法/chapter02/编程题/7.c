@@ -1,20 +1,24 @@
-/* 利用printf和scanf解决计算问题 */
+/*
+ * Name: 7.c 
+ * Purpose: 用户输入一个金额，显示使用20、10、5和1美元的钞票付款
+ * Author: mayfly
+ */
 #include <stdio.h>
 
 int main(void)
 {
-  int amount;
-  printf("Enter a dollar amount: ");
-
-  scanf("%d", &amount);
-
-  int twenty_note = amount / 20;
-  int ten_note = (amount - twenty_note * 20) / 10;
-  int five_note = (amount - twenty_note * 20 - ten_note * 10) / 5;
-  int one_note = (amount - twenty_note * 20 - ten_note * 10 - five_note * 5);
-  printf("$20 bills: %d\n", twenty_note);
-  printf("$10 bills: %d\n", ten_note);
-  printf("$5 bills: %d\n", five_note);
-  printf("$1 bills: %d\n", one_note);
-  return 0;
+  // 输入金额
+  int salary; // 声明
+  printf("Enter a dollar amount:"); // 提示语
+  scanf("%d",&salary);
+  // 拆分金额
+  int twentyNumber = salary / 20;
+  int tenNumber = salary % 20  / 10;
+  int fiveNumber = salary % 10 / 5;
+  int oneNumber = salary % 5;
+  // 结果显示
+  printf("$20 bills: %d\n", twentyNumber);
+  printf("$10 bills: %d\n", tenNumber);
+  printf(" $5 bills: %d\n", fiveNumber);
+  printf(" $1 bills: %d\n", oneNumber);
 }
