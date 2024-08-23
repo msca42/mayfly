@@ -1,3 +1,8 @@
+/*
+ * Name: 15.c 
+ * Purpose: 输出i和j的值，默认i = 1, j = 2
+ * Author: mayfly
+ */
 #include <stdio.h>
 
 int main(void)

@@ -1,10 +1,17 @@
+/*
+ * Name: 1.c
+ * Purpose: 输入一个两位数，然后按照逆序打印这个数
+ * Author: mayfly
+ * Description:
+ *  Enter a two-digit number: 28
+ *  The reversal is: 82
+ */
 #include <stdio.h>
 
 int main(void)
 {
-  int numbers;
-  printf("Enter a two-digit number:");
-  scanf("%d", &numbers);
-  printf("The reversal is: %d%d\n", numbers % 10, numbers / 10);
-  return 0;
+  int number;
+  printf(" Enter a two-digit number: ");
+  scanf("%d", &number);
+  printf(" The reversal is: %d\n", number % 10 * 10 + number / 10);
 }

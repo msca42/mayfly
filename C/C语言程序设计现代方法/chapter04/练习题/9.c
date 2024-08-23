@@ -1,3 +1,8 @@
+/*
+ * Name: 9.c 
+ * Purpose: 在i,j,k都是int类型，求输出结果
+ * Author: mayfly
+ */
 #include <stdio.h>
 
 int main(void)

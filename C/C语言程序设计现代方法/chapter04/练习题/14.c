@@ -1,3 +1,8 @@
+/*
+ * Name: 14.c 
+ * Purpose:  在语句中添加()
+ * Author: mayfly
+ */
 #include <stdio.h>
 
 int main(void)

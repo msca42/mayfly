@@ -1,3 +1,8 @@
+/*
+ * Name: 5.c 
+ * Purpose: 判断C89下输出值
+ * Author: mayfly
+ */
 #include <stdio.h>
 
 int main(void)
