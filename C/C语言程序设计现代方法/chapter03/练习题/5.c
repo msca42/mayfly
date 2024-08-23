@@ -1,12 +1,16 @@
-/* scanf的匹配机制 */
+/*
+ * Name: 5.c 
+ * Purpose: 判断scanf函数的输出结果，给出scanf函数和输入，需要输出
+ * Author: mayfly
+ */
 #include <stdio.h>
 
 int main(void)
 {
-  float i, j;
-  int x;
+  int i;
+  float x,y;
   // 12.3 45.6 789
-  scanf("%f%d%f", &i, &x, &j);
+  scanf("%f%d%f", &x, &i, &y);
   // 12.3 45 0.6
-  printf("%f%d%f", i, x, j);
+  printf("%f%d%f", x, i, y);
 }

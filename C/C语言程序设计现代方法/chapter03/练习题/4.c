@@ -1,4 +1,8 @@
-/* scanf的匹配机制 */
+/*
+ * Name: 4.c 
+ * Purpose: 判断scanf函数的输出结果，给出scanf函数和输入，需要输出
+ * Author: mayfly
+ */
 #include <stdio.h>
 
 int main(void)
