@@ -1,3 +1,8 @@
+/*
+ * Name: 2.c 
+ * Purpose: 判断输出，默认i,j,k是int类型变量
+ * Author: mayfly
+ */
 #include <stdio.h>
 
 int main(void)
@@ -17,7 +22,7 @@ int main(void)
   i = 5;
   j = 0;
   k = -5;
-  printf("%d", i && j || k); //(i && j) || k   1
+  printf("%d", i && j || k); // (i && j) || k   1     
 
   // d
   i = 1;
@@ -25,3 +30,6 @@ int main(void)
   k = 3;
   printf("%d", i < j || k); // 1
 }
+/*
+在C语言中，非0为真，0为假
+*/

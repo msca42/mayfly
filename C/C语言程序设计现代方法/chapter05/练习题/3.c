@@ -1,3 +1,8 @@
+/*
+ * Name: 3.c 
+ * Purpose: 判断输出，默认i,j,k是int类型变量
+ * Author: mayfly
+ */
 #include <stdio.h>
 
 int main(void)

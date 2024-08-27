@@ -1,3 +1,8 @@
+/*
+ * Name: 11.c 
+ * Purpose: switch案例
+ * Author: mayfly
+ */
 #include <stdio.h>
 
 int main(void)

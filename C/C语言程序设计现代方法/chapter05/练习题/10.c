@@ -1,3 +1,8 @@
+/*
+ * Name: 10.c 
+ * Purpose: 判断输出结果
+ * Author: mayfly
+ */
 #include <stdio.h>
 
 int main(void)
@@ -13,3 +18,6 @@ int main(void)
     printf("two");
   }
 }
+/*
+由于没有break,所以结果的onetwo
+*/
