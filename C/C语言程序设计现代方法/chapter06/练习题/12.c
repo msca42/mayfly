@@ -1,20 +1,18 @@
+/*
+ * Name: 12.c 
+ * Purpose: 修改素数判定
+ * Author: mayfly
+ */
 #include <stdio.h>
 
 int main(void)
 {
-  int d, n;
-  n = 30;
-  _Bool flag = 1;
-  for (d = 2; d * d <= n; d++)
+  int d;
+  int n = 64;
+  
+  for(d = 2; d * d < n; d++)
   {
-    if (n % d == 0)
-      flag = 0;
-      break;
+    if (n % d == 0 )
+      continue;
   }
-
-  if(flag)
-  {
-    printf("%d",n);
-  }
-
 }

@@ -1,3 +1,8 @@
+/*
+ * Name: 1.c 
+ * Purpose: 判断输出
+ * Author: mayfly
+ */
 #include <stdio.h>
 
 int main(void)

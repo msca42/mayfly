@@ -1,3 +1,8 @@
+/*
+ * Name: 11.c 
+ * Purpose: 判断输出
+ * Author: mayfly
+ */
 #include <stdio.h>
 
 int main(void)
@@ -11,6 +16,10 @@ int main(void)
       continue;
     sum += i;
   }
-  
+
   printf("%d\n", sum); // 20
 }
+/* 
+问题的关键在在于如何理解if之后的控制表达式i % 2 
+等价于 i % 2 == 1, 所以sum是偶数的和
+*/
