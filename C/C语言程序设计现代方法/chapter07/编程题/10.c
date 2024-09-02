@@ -1,26 +1,25 @@
+/*
+ * Name: 10.c 
+ * Purpose:  统计句子中元音字母(a、e、i、o、u)的个数
+ * Author: mayfly
+ * Description:
+ *  Enter a sentence: And that's the way it is.
+ *  Your sentence contains 6 vowels.
+ */
 #include <stdio.h>
 #include <ctype.h>
 
 int main(void)
 {
-    char c;
-    int sum = 0;
-    printf("Enter a sentence: ");
-    while ((c=getchar())!='\n')
+    char ch;
+    int count = 0;
+    printf("Enter a sentence:");
+    while ((ch = toupper(getchar()))!= '\n')
     {
-        switch (toupper(c))
-        {
-        case 'A':
-        case 'E':
-        case 'I':
-        case 'O':
-        case 'U':
-            sum += 1;
-            break;
+        if(ch == 'A'|| ch == 'E'|| ch == 'I'|| ch == 'O' || ch == 'U') {
+            count++;
         }
     }
-    printf("Your sentence contains %d vowels\n", sum);
-
-    return 0;
+    printf("Your sentence contains %d vowels.", count);
     
 }

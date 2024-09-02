@@ -1,10 +1,10 @@
 /*
-\b \x08
-\n \x0A
-\r \x0D
-\t \x09
-*/
+ * Name: 8.c 
+ * Purpose:  将字符转义序列转换为十六进制数字转义序列
+ * Author: mayfly
+ */
 #include <stdio.h>
+
 int main(void)
 {
     char a = '\b';

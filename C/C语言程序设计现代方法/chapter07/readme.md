@@ -2,7 +2,9 @@
 
 ## 整数类型
 
-- 整型可以分为有符号整型和无符号整型，通过 signed 和 unsigned 修饰，也可以分为长整型和短整型，通过 long 和 short 修饰
+- 整型可以分为有符号整型和无符号整型，通过 signed 和 unsigned 修饰
+  - 无符号整数主要用于系统编程和底层与机器相关的应用
+- 整型也可以分为长整型和短整型，通过 long 和 short 修饰
 - 将说明符组合起来可以有 6 种不同的类型
   - signed short int
   - unsigned short int
@@ -11,7 +13,8 @@
   - signed long int
   - unsigned long int
 - 取值范围
-  - 每一种数据类型根据机器的不同取值范围不同
+  - 每一种数据类型根据机器的不同取值范围不同  
+    - 确定整数类型范围的一种方法是检查<limits.h>头
   - 编译器规则
     - short、int、long 必须覆盖一个确定的最小取值范围
     - int 类型不能比 short 短，long 类型不能比 int 短
@@ -24,8 +27,15 @@
   - 在程序中以文本形式出现的数,有十进制、八进制和十六进制
   - 数据在计算机内部都是以二进制存储的
   - 编译器规则
-    - 十进制: int、long int、unsigned long int
-    - 八进制和十六进制: int、unsigned int、long int、unsigned long int
+    - 十进制: 
+      - 包含0～9，不能以0开头
+      - int、long int、unsigned long int
+    - 八进制
+      - 包含0～7，必须以0开头
+      - int、unsigned int、long int、unsigned long int
+    - 十六进制: 
+      - 包含0～9，a~f，以0x开头
+      - int、unsigned int、long int、unsigned long int
     - 强制编译器按照长整型处理方式: 后缀 L
     - 强制编译器按照无符号处理方式: 后缀 U
     - 强制编译器按照 long long int 处理方式: 后缀 LL
@@ -46,26 +56,31 @@
 ## 浮点类型
 
 - 分类
-  - C 语言中提供三种浮点类型: float、double、long double
+  - C 语言中提供三种浮点类型: 
+    - float 单精度浮点数
+    - double 双精度浮点数
+    - long double 扩展精度浮点数
   - C99 新增复数类型即在原三种类型上加上复数，并将原先三种划分归实浮点类型
   - 默认使用 double 类型
 - 常量
   - 必须包含小数点或指数
-  - 指数指明了对前面的数进行缩放所学的 10 的幂次
+  - 指数指明了对前面的数进行缩放所需的 10 的幂次
   - 格式: 小数 E(符号)指数
 - 编译器规则
   - 使用 float，后缀 f
   - 使用 long double，后缀 L
+  - 在C语言中，浮点数默认double类型，在需要的时候，可以自动转换为float类型
 - 读写转换符
   - %e、%f、%g 用于单精度浮点数
   - 在转换符之前加上 l 用于在 scanf 函数中的双精度浮点数，C99 允许在 printf 函数中使用 l
-  - 在转换符之前机上 L 用于扩展精度浮点数
+  - 在转换符之前加上 L 用于扩展精度浮点数
 
 ## 字符类型
 
 - 不同的计算机有不同的字符集，char 类型因此不同
   - 最常见的字符集是 ASCII，使用 7 位表示 128 个字符，后续扩展为 8 位表示 256 个字符
 - char 类型变量可以用任意单字符赋值，使用单引号
+- 在C语言中，将字符当作小整数进行处理，本质是int类型
 - char 类型可以分为有符号字符和无符号字符，有符号字符范围-128 ～ 127，无符号字符 0 ～ 255，使用 signed 和 unsigned 修饰
 - 注意事项
 
@@ -91,7 +106,7 @@
     - 浮点类型
       - 实数浮点数 float、double、long double
       - 复数类型 float_Complex、double_Complex、long double_Complex
-- 转义类型
+- 转义序列
   - 用于表示一些特殊字符，如不可见的非打印字符或无法从键盘输入的字符
   - 分类
     - 字符转移序列 包含最常用的字符
@@ -123,6 +138,9 @@
 - 使用 getchar 和 putchar 函数读写字符
   - getchar 会返回一个 int 类型的值
   - 应用场景: 搜索字符的循环和跳过字符的循环
+```c
+ while (getchar() != '\n') ;
+```
 
 ## 类型转换
 
@@ -167,8 +185,10 @@
 ## sizeof 运算符
 
 - 允许程序获取存储指定类型的值所需要的内存空间
-- 格式: sizeof (类型名)
+- 格式: sizeof (类型名) 或sizeof 表达式
 - 返回值是一个无符号整数(size_t 类型)，表示存储属于类型名的值所需的字节数
-- 可以应用于类型名、常量、变量和表达式
+- 可以应用于类型名、常量、变量和表达式，sizeof应用表达式可以不加()
 - C89中需要将size_t类型转换为unsigned long类型 使用转换说明%lu
 - C99中printf可以直接显示size_t类型值，使用转换说明%zu
+
+

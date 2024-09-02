@@ -1,15 +1,27 @@
 /*
-合法
-i += c;
-c = 2 * c  - 1;
-putchar(c)
+ * Name: 4.c 
+ * Purpose:  分析语句是否合法
+ * Author: mayfly
+ */
 
-非法
-printf(c) 没有转换说明符
-*/
 #include <stdio.h>
+#include <ctype.h>
+
 int main(void)
 {
-    char c  = 'a';
-    printf("%c",c);
+  int i  = 0;
+  char c = 'a';
+
+  // a
+  i += c;
+
+  // b 
+  c = 2 * c -1;
+
+  // c
+  putchar(c);
+
+  // d
+//   printf(c);  没有格式化字符串
+
 }
