@@ -35,3 +35,4 @@ int main(void)
     printf("一个月中每小时的温度读数是: %d",average_hour);
 
 }
+
