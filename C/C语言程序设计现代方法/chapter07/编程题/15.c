@@ -11,24 +11,25 @@
 
 int main(void)
 {
-    int n = 1;
+    int n;
     int max_n;
-    short fact = 1;
-    // printf("Enter a positive integer: ");
-    // scanf("%d",&n);
+    long  fact = 1;
+    printf("Enter a positive integer: ");
+    scanf("%d",&n);
+    max_n = n;
     int count = 1;
-    while (fact <= SHRT_MAX && n <= INT_MAX && n >=1)
+    while (n>1)
     {
         fact *= n;
-        n++;
-        printf("%d: %d",count,n);
-        count++;
+        n--;
     }
-    max_n = n;
-    printf("Factorial of %d: %d\n",max_n, fact);
+    printf("Factorial of %d: %ld\n",max_n, fact);
 
     
 }
 /* 
-感觉是边界问题，在其他编程语言中会自动限制，在C语言中需要程序猿手动限制
+short  7的阶乘
+int   16的阶乘
+long  20的阶乘
+
 */

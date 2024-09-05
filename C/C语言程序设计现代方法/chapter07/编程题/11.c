@@ -6,8 +6,38 @@
  *  Enter a first and last name： Lloyd Fosdick
  *  Fosdick, L.
  */
-// TODO
 /* 
 如何利用单字符char接收一个字符串输入
 如何输出一个字符串
 */
+#include <stdio.h>
+#define N -999 // 标志符
+
+int main(void)
+{
+    char ch;
+    char firstName;
+    char secondName;
+    int count = 0;
+    printf("Enter a first and last name:");
+    while ((ch=getchar())!='\n')
+    {
+        if(count == 0 ){
+            firstName = ch;
+            count++;
+        }
+        if (ch == ' '){
+            count = N;
+        }
+       
+        if (count == N){
+            secondName = ch;
+            printf("%c",secondName);
+        }
+    }
+    printf(",");
+    printf("%c\n",firstName);
+    
+
+}
+
