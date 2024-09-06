@@ -27,7 +27,7 @@ int main(void)
 
   // 声明
   int  flyStart[8] = {480,583,679,767,840,945,1140,1305};
-  int  flyEnd[8] = {};
+  int  flyEnd[8] = {616,712,811,900};
   int hour, minute;
   int total_minutes;
   // 输入
