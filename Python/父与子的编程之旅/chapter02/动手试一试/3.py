@@ -1,2 +1,0 @@
-name = "msca"
-print(name)

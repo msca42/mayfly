@@ -1,3 +1,0 @@
-# import spam
-
-# bacon()
