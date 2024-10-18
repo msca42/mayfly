@@ -1,0 +1,11 @@
+# 操作图像
+- 图像基础
+    - 使用RGBA表示图像，0～255表示颜色深浅
+- pillow模块
+    - ImageColor
+        - 导入模块
+            - from PIL import ImageColor
+        - getcolor(): 获取颜色的RGBA元组
+            - 参数1 颜色名称
+            - 参数2 RGBA
+    - 矩形元组: 左上右下
