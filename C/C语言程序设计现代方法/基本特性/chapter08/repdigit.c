@@ -12,13 +12,14 @@ int main(void)
     long n;
 
     printf("Enter a number: ");
-    scanf("%1d",&n);
+    scanf("%ld",&n);
 
     while (n>0)
     {
         digit = n % 10;
-        if(digit_seen[digit])
+        if(digit_seen[digit]){
             break;
+        }
         digit_seen[digit] = true;
         n /= 10;
     }
