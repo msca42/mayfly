@@ -1,0 +1,1 @@
+Hello World! This is a sample text. It contains some words and characters. We can use it to test the letter frequency program. The quick brown fox jumps over the lazy dog. Another sentence to make the text more diverse.
