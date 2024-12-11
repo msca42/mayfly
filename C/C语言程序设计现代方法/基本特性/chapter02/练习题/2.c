@@ -8,6 +8,8 @@ int main(void)
     return 0;
 }
 /*
+考察指令和语句
+
 指令: #include <stdio.h>
 语句:
     printf("Parkinson's Law:\nWork expands so as to ");
