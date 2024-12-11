@@ -3,20 +3,29 @@
 int main(void)
 {
 
-    int money;
-    int twenty_number,ten_number,five_number,one_number;
-    printf("Enter a dollar amount:");
-    scanf("%d",&money);
+    // 声明
+    int amount;
+    int twenty_note,ten_note,five_note,one_note;
 
-    twenty_number = money  / 20;
-    ten_number = (money - twenty_number * 20) / 10;
-    five_number = (money - twenty_number * 20 - ten_number * 10) / 5;
-    one_number = money - twenty_number *  20 - ten_number * 10 - five_number * 5;
+    // 提示输入
+    printf("Enter a dollar amount : ");
+    scanf("%d",&amount);
 
-    printf("$20 bills: %d\n", twenty_number);
-    printf("$10 bills: %d\n", ten_number);
-    printf("$5 bills: %d\n", five_number);
-    printf("$1 bills: %d\n", one_number);
+    // 核心逻辑
+    twenty_note = amount  / 20;
+    ten_note = (amount - twenty_note * 20) / 10;
+    five_note = (amount - twenty_note * 20 - ten_note * 10) / 5;
+    one_note = (amount - twenty_note *  20 - ten_note * 10 ) % 5;
 
-    
+    // 输出
+    printf("$20 bills: %d\n", twenty_note);
+    printf("$10 bills: %d\n", ten_note);
+    printf("$5 bills: %d\n", five_note);
+    printf("$1 bills: %d\n", one_note);
+
+    return 0;
 }
+
+/*
+输入一个美元数量、显示如何用20美元、10美元、5美元和1美元来付款
+*/
