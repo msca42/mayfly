@@ -2,17 +2,28 @@
 
 int main(void)
 {
-    int item;
+    // 声明
+    int number;
     float price;
-    int mm,dd,yyyy;
+    int day, month, year;
+
+    // 输入
     printf("Enter item number: ");
-    scanf("%d",&item);
+    scanf("%d",&number);
     printf("Enter unit price: ");
     scanf("%f",&price);
     printf("Enter purchase date (mm/dd/yyyy): ");
-    scanf("%d/%d/%d",&mm,&dd,&yyyy);
+    scanf("%d / %d / %d",&month, &day, &year);
 
+
+    // 输出
     printf("Item\t\tUnit\t\tPurchase\n");
     printf("\t\tPirce\t\tDate\n");
-    printf("%d\t\t$%7.2f\t%02d/%02d/%d",item,price,mm,dd,yyyy);
+    
+    printf("%-d\t\t$%7.2f\t%02d/%02d/%04d",number,price,month,day,year);
+    return 0;
 }
+
+/*
+对用户录入的产品信息进行格式化
+*/

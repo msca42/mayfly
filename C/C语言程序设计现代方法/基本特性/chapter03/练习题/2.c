@@ -6,5 +6,5 @@ int main(void)
     printf("%-8.1e",x);
     printf("%10.6e",x);
     printf("%-8.3f",x);
-    printf("%6f",x);
+    printf("%6.f",x);
 }
