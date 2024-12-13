@@ -4,8 +4,10 @@
 
 int main(void)
 {
+    // 声明
     int month, day, year;
 
+    // 输入年月日
     printf("Enter date (mm/dd/yy)");
     scanf("%d /%d /%d",&month, &day, &year);
 
@@ -33,7 +35,7 @@ int main(void)
         printf("January");
         break;
     case 2:
-        printf("FFebruary");
+        printf("February");
         break;
     case 3:
         printf("March");
@@ -70,3 +72,8 @@ int main(void)
     printf(", 20%.2d.\n",year);
     return 0;
 }
+
+/*
+以固定格式显示日期
+验证switch语句
+*/

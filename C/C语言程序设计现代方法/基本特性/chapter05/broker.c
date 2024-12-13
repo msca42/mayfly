@@ -4,11 +4,14 @@
 
 int main(void)
 {
+    // 声明交易额和佣金
     float commisson, value;
     
+    // 输入交易额
     printf("Enter value of trade: ");
     scanf("%f", &value);
 
+    // 通过交易额判断佣金
     if(value < 2500.00f){
         commisson = 30.00F + .017F * value;
     } else if (value < 6250.00f) {
@@ -27,8 +30,13 @@ int main(void)
         commisson = 39.00f;
     }
 
+    //输出佣金
     printf("Commission: $%.2f\n", commisson);
 
     return 0;
     
 }
+/*
+股票通过经纪人买卖，经纪人根据交易额获取佣金
+验证if语句
+*/

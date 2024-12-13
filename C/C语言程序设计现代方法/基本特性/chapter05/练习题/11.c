@@ -15,5 +15,7 @@ switch (area_code) {
     case  912: 
         print("Savannah");
         break;
+    default:
+        printf("Area code not recognized");
 }
 */
