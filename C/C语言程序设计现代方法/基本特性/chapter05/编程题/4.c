@@ -2,20 +2,30 @@
 
 int main(void)
 {
-    int speed;
-    printf("please input speed");
-    scanf("%d",&speed);
-    if(speed < 1){
+    // 声明风速
+    float windspeed;
+
+    // 输入风速
+    printf("Enter the wind speed (n mile/hour): ");
+    scanf("%f",&windspeed);
+
+    //核心逻辑
+    if(windspeed < 1.0f){
         printf("Calm");
-    }else if(speed <=3){
+    }else if(windspeed <=3.0f){
         printf("Light air");
-    } else if (speed <= 27) {
+    } else if (windspeed <= 27.0f) {
         printf("Breeze");
-    } else if(speed <= 47){
+    } else if(windspeed <= 47.0f){
         printf("Gale");
-    } else if(speed <= 63){
+    } else if(windspeed <= 63.0f){
         printf("Storm");
     } else {
         printf("Hurricane");
     }
+
+    return 0;
 }
+/*
+用户输入风速，显示描述
+*/

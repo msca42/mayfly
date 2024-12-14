@@ -4,39 +4,46 @@
 
 int main(void)
 {
-    int number;
-    float commisson, price,value, compete_commission;
+    // 声明
+    float commission, price,value, ccommission;
+    int amount;
     
-    printf("Enter number of trade: ");
-    scanf("%d", &number);
-    printf("Enter price of trade: ");
-    scanf("%f", &price);
-    value = price * number;
+    // 输入用户输入股票的数量和每股的价格
+    printf("Enter amount and the price of stock: ");
+    scanf("%d %f", &amount, &price);
+    value =  amount * price;
 
+    // 核心逻辑 通过交易额判断佣金
     if(value < 2500.00f){
-        commisson = 30.00F + .017F * value;
+        commission = 30.00F + .017F * value;
     } else if (value < 6250.00f) {
-        commisson = 56.00f + .0066f * value;
+        commission = 56.00f + .0066f * value;
     } else if (value < 20000.00f) {
-        commisson = 76.00f + .0034f * value;
-    } else if (value < 5000.00f){
-        commisson = 100.00f + .0022f * value;
+        commission = 76.00f + .0034f * value;
+    } else if (value < 50000.00f){
+        commission = 100.00f + .0022f * value;
     } else if(value < 500000.00f){
-        commisson = 155.00f + .0011f * value;
+        commission = 155.00f + .0011f * value;
     } else {
-        commisson = 255.00f + .0009f  * value;
+        commission = 255.00f + .0009f  * value;
     }
 
-    if (commisson < 39.00f){
-        commisson = 39.00f;
-    }
-    if(number < 2000){
-        printf("Commission: $33.03");
-    } else {
-        printf("Commission: $33.02");
+    if (commission < 39.00f){
+        commission = 39.00f;
     }
 
-    printf("Commission: $%.2f\n", commisson);
+    // 输出佣金
+    printf("Commission: $%.2f\n", commission);
+    
+    // 计算对手佣金
+    if(amount < 2000){
+        ccommission = 33 + 0.03 * amount;
+    } else {
+        ccommission = 33 + 0.02 * amount;
+    }
+
+    // 输出对手佣金
+    printf("Commission of Others: $%.2f\n",ccommission);
 
     return 0;
     
@@ -44,5 +51,6 @@ int main(void)
 
 /*
 修改broker.c 
-1
+1 不直接输入交易额，用户输入股票的数量和每股的价格
+2 增加语句计算经纪人竞争对手的佣金，并显示
 */
