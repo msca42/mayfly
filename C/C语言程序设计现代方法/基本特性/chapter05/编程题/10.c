@@ -2,10 +2,24 @@
 
 int main(void)
 {
-    int number;
+    // 声明
+    int score;
+    int digit;
+
+    // 输入
     printf("Enter numerical grade: ");
-    scanf("%d",&number);
-    switch (number / 10)
+    scanf("%d",&score);
+
+    // 有效区间判定
+    if(score > 100 || score < 0){
+        printf("Error input score, exit.");
+        return 0;
+    }
+
+    digit = score / 10;
+    
+    // 转换判断
+    switch (digit)
     {
     case 10: case 9:
         printf("Letter grade: A");
@@ -19,11 +33,12 @@ int main(void)
     case 6:
         printf("Letter grade: D");
         break;
-    case 5: case 4: case 3: case 2: case 1:
-        printf("Letter grade: E");
-        break;
     default:
-        printf("show error messnage");
+        printf("Letter grade: F");
         break;
     }
 }
+
+/*
+利用switch把数字表示的成绩转化位字母表示的等级
+*/
