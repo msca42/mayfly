@@ -2,15 +2,13 @@
 
 int main(void)
 {
-
-    // 声明
+    // 声明收入和税金
     float income, tax;
     
     // 输入
-    printf("Enter the taxable income : ");
+    printf("please input income: ");
     scanf("%d",&income);
 
-    // 计算税金
     if (income < 750.0f){
         tax = income * 0.01;
     } else if(income < 2250.0f){
@@ -32,5 +30,5 @@ int main(void)
 }
 
 /*
-输入收入，显示税金
+用户输入需纳税的收入，显示税金
 */

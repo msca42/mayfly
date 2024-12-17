@@ -4,20 +4,18 @@
 
 int main(void)
 {
-    // 声明
+    //声明
     float commission, price,value, ccommission;
     int amount;
     
-
-    // 输入
-    printf("Enter amount and the price  of stock: ");
+     // 输入用户输入股票的数量和每股的价格
+    printf("Enter amount and the price of stock: ");
     scanf("%d %f", &amount, &price);
-    
+
     // 计算逻辑
     value = price * amount;
 
-
-    // 判断逻辑
+    // 核心逻辑 通过交易额判断佣金
     if(value < 2500.00f){
         commission = 30.00F + .017f * value;
     } else if (value < 6250.00f) {
@@ -35,18 +33,18 @@ int main(void)
     if (commission < 39.00f){
         commission = 39.00f;
     }
-
-    // 输入佣金
+    // 输出佣金
     printf("Commission: $%.2f\n", commission);
+    
 
-    // 输入对手佣金
+    // 计算对手佣金
     if(amount < 2000){
-        ccommission = 33 + 0.03 * amount;
+       ccommission = 33 + 0.03 * amount;
     } else {
         ccommission = 33 + 0.02 * amount;
     }
 
-    printf("Commission of Others: $%.2f\n", ccommission);
+   printf("Commission of Others: $%.2f\n",ccommission);
 
     return 0;
     
@@ -54,6 +52,5 @@ int main(void)
 
 /*
 修改broker.c 
-1 输入股票数量、每股价格
-2 增加语句显示对手的佣金
+1
 */

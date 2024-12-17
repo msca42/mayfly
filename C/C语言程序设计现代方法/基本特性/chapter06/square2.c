@@ -4,12 +4,15 @@
 
 int main()
 {
+    //声明
     int i, n;
 
+    //输入提示
     printf("This program prints a table of squares.\n");
     printf("Enter number of entries in table: ");
     scanf("%d", &n);
 
+    // for循环
     for (i = 1; i <= n; i++)
     {
         printf("%10d%10d\n", i, i * i);

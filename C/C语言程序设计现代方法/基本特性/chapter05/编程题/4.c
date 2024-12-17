@@ -2,14 +2,14 @@
 
 int main(void)
 {
-    // 声明
+    // 声明风速
     float windspeed;
 
-    // 输入
+    // 输入风速
     printf("Enter the wind speed (n mile/hour): ");
     scanf("%f",&windspeed);
-    
-    // 判断逻辑与输出
+
+    //核心逻辑
     if(windspeed < 1.0f){
         printf("Calm");
     }else if(windspeed <=3.0f){
@@ -26,7 +26,6 @@ int main(void)
 
     return 0;
 }
-
 /*
- 输入风俗、显示相应的描述
+用户输入风速，显示描述
 */
