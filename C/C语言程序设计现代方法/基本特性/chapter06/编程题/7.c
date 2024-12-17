@@ -4,19 +4,24 @@
 
 int main()
 {
-    int i, n, odd, square;
+    // 声明
+    int i, n;
 
+    // 提示输入
     printf("This program prints a table of squares.\n");
     printf("Enter number of entries in table: ");
     scanf("%d", &n);
 
-    
-    odd = 3;
-    for(square = 1,i = 1; i <= n; odd += 2, ++i){
-        printf("%10d%10d\n",i, square);
-        square += odd;
+    // 主循环
+    for (i = 1; i <= n; i++)
+    {
+        printf("%10d%10d\n", i, i * i);
     }
-
 
     return 0;
 }
+
+/*
+修改square3.c
+在for循环中初始化
+*/

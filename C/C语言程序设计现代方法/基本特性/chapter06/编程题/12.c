@@ -2,23 +2,32 @@
 
 int main(void)
 {
-    int number;
-    float e = 1, sum,min_float;
-    printf("please input number: ");
-    scanf("%d",& number);
-    printf("please input min float");
-    scanf("%f",&min_float);
+    // 声明
+    float threshold;
+    float factorial = 1.0;
+    float e = 0.0;
+    
+    // 输入
+    printf("Enter a number to calc e: ");
+    scanf("%1F",&threshold);
 
-    int i = 1;
-    while (1)
-    {
-        sum *= i;
-        if(1/ sum < min_float ){
+    // 主逻辑
+    for(int i = 1; ; i++){
+        factorial = factorial * i;
+        e = e  + 1.0 / factorial;
+        if(1.0 / factorial < threshold) {
             break;
         }
-        e += 1/sum;
-        i++;
     }
+
+    printf("The e = %1f\n",e);
+
+    return 0;
+
     
-    printf("%f",e);
 }
+
+/*
+修改11.c 
+持续执行加法运算，知道当前项小于∑，∑是用户输入的较小的浮点数
+*/
