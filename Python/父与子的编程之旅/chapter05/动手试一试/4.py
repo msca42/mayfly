@@ -1,0 +1,6 @@
+length = int(input('pleas input length of room'))
+width = int(input('pleas input width of room'))
+price = float(input('please input price of  square foot with carpet'))
+print("总共需要:",length * width,"平方米")
+print("总共需要:",length * width * 9,"平方尺")
+print("总价格是:",length * width * price * 9)

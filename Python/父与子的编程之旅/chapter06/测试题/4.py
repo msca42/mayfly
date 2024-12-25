@@ -1,0 +1,1 @@
+# float(easygui.enterbox())
