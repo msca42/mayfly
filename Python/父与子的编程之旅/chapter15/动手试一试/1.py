@@ -1,0 +1,3 @@
+from  printName import *
+
+printName()
