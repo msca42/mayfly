@@ -8,8 +8,8 @@ pygame.init()
 screen = pygame.display.set_mode([640,480])
 # 填充屏幕 白色
 screen.fill([255,255,255])
-# 画一个圆 参数: 屏幕、RGB、坐标、半径、线宽
-pygame.draw.circle(screen,[255,0,0],[100,100],30,0)
+# 在屏幕中间画一个圆 参数: 屏幕、RGB、坐标、半径、线宽
+pygame.draw.circle(screen,[255,0,0],[320,240],30,0)
 # 切换图形的最新版本(刷新)
 pygame.display.flip()
 

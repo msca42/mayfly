@@ -1,5 +1,6 @@
 # 导入模块
-import pygame
+import pygame,sys
+import math
 
 # 初始化
 pygame.init()
@@ -8,8 +9,12 @@ pygame.init()
 screen = pygame.display.set_mode([640,480])
 # 填充屏幕 白色
 screen.fill([255,255,255])
-# 画一个圆 参数: 屏幕、RGB、坐标、半径、线宽
-pygame.draw.circle(screen,[255,0,0],[100,100],30,0)
+
+for x in range(0,640):
+    y = int(math.sin(x/640 * 4 * math.pi) * 200  + 240)
+    # 画一个矩形
+    pygame.draw.rect(screen,[0,0,0],[x,y,1,1],1)
+
 # 切换图形的最新版本(刷新)
 pygame.display.flip()
 
