@@ -3,7 +3,7 @@ numbers = 3
 cost = 35.27
 tip = 0.15
 
-each_cost  = cost *  (1 - tip) / numbers
+each_cost  = cost *  (1 + tip) / numbers
 print(each_cost)
 
 # b
