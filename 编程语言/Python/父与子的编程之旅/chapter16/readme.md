@@ -2,13 +2,17 @@
 ## 寻求帮助--Pygame模块
 ## Pygame窗口
 - Pygame中存在一个事件循环，不断检查用户的动作，在后台运行
+- 创建窗口
+    - display.set_mode()
 ## 在Pygame窗口中画图
 - 图形切换
+    - display.flip()
 - 怎样画一个圆
+    - draw.circle()
 - Pygame表面
     - pygame模块中，可以存在多个表面，显示表面由两个副本，称为双缓冲，先在缓冲区画图，绘制完成然后刷新切换
 - Pygame模块中的颜色
-    - RGB
+    - RGB: 红绿蓝
 - 位置--屏幕坐标
     - X轴和Y轴，窗口左上角标记为[0,0]
 - 形状大小
