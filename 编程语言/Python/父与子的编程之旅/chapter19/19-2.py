@@ -4,9 +4,8 @@ pygame.init()
 
 screen = pygame.display.set_mode([640,480])
 
-# 创建声音对象
-splat = pygame.mixer.Sound("splat.wav")
-splat.play()
+pygame.mixer.music.load("bg_music.mp3")
+pygame.mixer.music.play()
 
 running = True
 while running:
