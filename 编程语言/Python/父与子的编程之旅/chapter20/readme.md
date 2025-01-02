@@ -1,5 +1,9 @@
 # 更多GUI
 ## 使用PyQt模块
+- 使用GUI步骤
+    - 创建用户界面
+        - Qt Designer
+    - 编写代码实现功能
 ## Qt Designer
 - 添加按钮
 - 修改按钮的属性
