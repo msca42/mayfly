@@ -1,11 +1,37 @@
-# 动画与Canvas图形
+# JavaScript API
 
-## 使用requestAnimationFrame
+## Atomics 与 SharedArrayBuffer
 
-## 基本的画布功能
+## Clipboard API
 
-## 2D绘图上下文
+## 跨上下文消息
 
-## WebGL
+## Encoding API
+
+## File API 与 Blob API
+
+## Fullscreen API
+
+## Geolocation API
+
+## Device API
+
+## 媒体元素
+
+
+## Notifications API
+
+
+## Page Visibility API
+
+## Streams API
+
+## URL API
+
+## 计时API
+
+## Web组件
+
+## Web Cryptography API
 
 ## 小结

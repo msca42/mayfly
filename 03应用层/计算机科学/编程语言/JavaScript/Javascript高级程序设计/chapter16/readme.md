@@ -1,11 +1,11 @@
-# DOM2和DOM3
+# 动画与Canvas图形
 
-## DOM的演进
+## 使用requestAnimationFrame
 
-## 样式
+## 基本的画布功能
 
-## 遍历
+## 2D绘图上下文
 
-## 范围
+## WebGL
 
 ## 小结
