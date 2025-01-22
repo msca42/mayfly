@@ -72,7 +72,38 @@
         - 函数是一种特殊的对象类型
 - Undefined 类型
     - 使用var或let声明没有初始化时默认赋值
-
+    - 注意事项
+        - 使用未声明的变量会报错
+        - 使用typeof操作符对未初始化变量和未声明的变量，返回值都是undefined
+- Null 类型
+    - 只有一个值null,表示一个空对象指针
+    - 使用typeof操作符，返回值为object
+    - 由于undefined是从null派生而来，所以ECMA-262定义表面相等，也就是使用==返回true
+- Boolean 类型
+    - 两个值: true和false
+    - 类型转换函数
+        - Boolean() 可以将其他类型转换为Boolean类型
+        - 转化为false的值: false、""、0、NaN、null、undefined
+        - 通常无需转换函数自动转换
+- Number 类型
+    - 使用IEEE 754格式表示整数和浮点数
+    - 整数
+        - 字面量格式: 二进制0b、八进制0o、十进制、十六进制0x
+    - 浮点数
+        - 对于特别大或特别小的浮点数使用科学记数法表示，格式为系数E幂
+        - 精度很高，但是在算术运算中不如整数精确
+    - 数字间隔符
+        - 使用下划线作为分隔符增加数字的可读性
+    - 值的范围
+        - Number.MIN_VALUE、Number.MAX_VALUE
+        - 不在此范围内的统称Infinity
+    - NaN 
+        - 不是数值,用于表示本来要返回数值的操作失败了
+        - NaN不等于包括NaN在内的所有值，通过函数isNaN()判断
+    - 类型转换函数
+        - Number(): 
+        - parseInt()
+        - parseFloat()
 
 ## 操作符
 
