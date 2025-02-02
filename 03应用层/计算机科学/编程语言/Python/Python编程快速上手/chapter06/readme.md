@@ -46,3 +46,20 @@
 - paste(): 将粘贴板信息传递到计算机
 ## 项目: 使用多剪贴板自懂回复消息
 ## 项目: 在Wiki标记中添加无序列表
+## 小程序: Pig 
+- 如果单词以元音开头，就在单词末尾添加yay。如果单词以辅音或辅音簇（例如ch或gr）开头，那么该辅音或辅音簇会移至单词的末尾，然后加上ay
+## 习题
+- 转义字符: 无法直接表示的字符
+- \n 换行 \t 制表符
+- \\
+- 因为使用了双引号
+- 使用三重引号
+- e、Hello、Hello、lo world!
+- HELLO True False
+- ['Remember,','remember,','the','fifth','of','November.']
+- 'There-can-be-only-one.'
+- rjust()、ljust()、center()
+- rstrip()、lstrip()
+## 实践项目
+- 表格输出
+- 僵尸骰子机器人
