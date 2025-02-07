@@ -1,25 +1,23 @@
+/* 将输入赋值到输出的程序，并且将其中制表符替换为\t,回退符替换为\b,反斜杠替换为\\*/
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     int c;
-    while ((c = getchar()) != EOF)
+
+    c = getchar();
+    while (c != EOF)
     {
-        if (c == '\t')
-        {
+        if (c == '\t'){
             printf("\\t");
-        }
-        else if (c == '\b')
-        {
+        } else if (c == '\b'){
             printf("\\b");
-        }
-        else if (c == '\\')
-        {
-            putchar('\\');
-        }
-        else
-        {
+        } else if (c == '\\'){
+            printf("\\\\");
+        } else {
             putchar(c);
         }
+        c = getchar();
     }
 }
+

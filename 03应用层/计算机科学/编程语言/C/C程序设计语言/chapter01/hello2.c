@@ -5,5 +5,5 @@
 int main()
 {
     // 库函数printf \n表示换行
-    printf("hello,world\n");
+    printf("hello,world");
 }

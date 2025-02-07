@@ -1,23 +1,27 @@
+/* 将输入赋值到输出的程序，并且将其中连续多个空格用一个空格代替*/
 #include <stdio.h>
 
-int main()
+int main(void)
 {
-    char c;
-    int prevIsSpace  = 0;
-    while ((c = getchar())!= EOF)
+    int c;
+
+    c = getchar();
+    while (c != EOF)
     {
-     
-        // 如何处理多个空格
-        if(c == ' '){
-            if(!prevIsSpace){
+        while (c == ' ')
+        {
+            c = getchar();
+            if (c != ' ')
+            {
                 putchar(' ');
-                prevIsSpace = 1;
             }
-        }  else {
-            putchar(c);
-            prevIsSpace = 0;
         }
-        
+        putchar(c);
+        c = getchar();
     }
-    
 }
+
+/*
+如何将多个空格用一个空格代替
+如何包含2~∞个空格，开始是空格，结束不是空格
+*/

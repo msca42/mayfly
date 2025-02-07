@@ -4,3 +4,4 @@ int main()
 {
     printf("%d",EOF);
 }
+// -1

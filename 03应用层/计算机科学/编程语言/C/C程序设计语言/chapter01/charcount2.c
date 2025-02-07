@@ -6,7 +6,7 @@ int main()
 
     for (nc = 0; getchar() != EOF; ++nc)
         ;
-    printf("%.0f\n",nc); 
+    printf("%.0f\n",nc);  // .0 表示不打印小数点和小数部分
     
 }
 
