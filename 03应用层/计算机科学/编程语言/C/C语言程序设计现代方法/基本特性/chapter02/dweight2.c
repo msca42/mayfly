@@ -14,6 +14,7 @@ int main(void)
     scanf("%d",&length);
     printf("Enter width of box: ");
     scanf("%d",&width);
+    
     // 表达式赋值
     volume = height * length * width;
     weight = (volume + 165) / 166;
