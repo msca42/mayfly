@@ -1,8 +1,11 @@
 # 基本类型
+- 数值类型可以分为整数类型和浮点数类型
+
 ## 整数类型
 - 整数类型可以分为有符号整数和无符号整数
-    - 默认整形都是有符号
-    - 无符号使用unsigned修饰
+    - 默认整型都是有符号
+    - 无符号使用unsigned修饰、无符号整数主要用于系统编程和底层与机器相关的应用
+    - 在20章之前,回避无符号类型
 - 整数类型还可以分为短整型、整型和长整型，结合符号，一共有六种数据类型
     - short int
     - unsigned short int
@@ -10,28 +13,38 @@
     - unsigned int
     - long int
     - unsigned long int 
-- 确定整数类型的范围:
-    - <limits.h> 定义每种整数类型的最大值和最小值的宏
+- C语言允许通过省略int来缩写整型
+- C语言取值范围的要求
+    - short、int、long 每个类型必须覆盖一个确定的最小取值范围
+    - int不能比short短、long不能比int短
+    - 在64位机上,short 16位,int 32位,long 64位
+    - 确定整数类型的范围:
+        - <limits.h> 定义每种整数类型的最大值和最小值的宏
 - C99中的整数类型
-    - 新增两种整数类型long long int和unsigned long long int
+    - 新增两种整数类型long long 和unsigned long long,至少64位
+    - 标准有符号整型: short、int、long、long long、signed char
+    - 标准无符号整型: unsigned short、unsigned、 unsigned long、unsigned long long、unsigned char、_Bool
     - 允许在具体实现时定义扩展的整数类型
-    - 标准有符号整型: short int、int、long int、long long int、signed char
-    - 标准无符号整型: unsigned short int、unsigned int、 unsigned long int、unsigned long long int、unsigned char 
+        - 例如编译器可以提供128位的整数类型
 - 整数常量
-    - 常量: 在程序中以文本形式出现的数。C语言允许使用十进制、八进制和十六进制形式书写整数常量
-    - 十进制常量类型: int、long int、unsigned long int
-    - 八进制和十六进制常量类型: int、unsigned int、long int、 unsigned long int
+    - 常量: 在程序中以文本形式出现的数
+    - C语言允许使用十进制、八进制和十六进制形式书写整数常量
+    - 十进制包含0~9、不能以0开头
+    - 八进制包含0~7、必须以0开头
+    - 十六进制包含0~9,A~F、必须以0x开头
+    - 十进制常量类型: int、long、unsigned long
+    - 八进制和十六进制常量类型: int、unsigned int、long、 unsigned long
     - 后缀
         - 强制编译器将常量作为长整型后缀L
         - 指明无符号常量后缀U
 - C99中的整数常量
-    - 十进制: int、long int、long long int
-    - 八进制或十六进制: int、unsigned int、long int、unsigned long int、long long int、unsigned long long int
+    - 十进制: int、long、long long
+    - 八进制或十六进制: int、unsigned int、long、unsigned long、long long、unsigned long long
     - 后缀
-        - LL和ULL
+        - long long类型表示LL和ULL
 - 整数溢出
     - 有符号溢出，程序行为未定义
-    - 无符号溢出，对2^n取模，其中n表示存储结果的位数
+    - 无符号溢出,对2^n取模,n表示存储结果的位数
 - 读/写整数
     - %d表示int类型
     - %u表示十进制无符号整数
@@ -39,11 +52,22 @@
     - %x表示十六进制无符号整数
     - %h表示短整数
     - %l表示长整数
+
 ## 浮点类型
 - C语言提供三种浮点数
     - float 单精度浮点数
     - double 双精度浮点数(默认使用)
     - long double 扩展精度浮点数
+- 精度标准IEEE754
+    - 组成: 符号、指数、小数
+        - 指数说明数值可能的大小
+        - 小数说明精度
+    - 单精度
+        - 32位: 1位符号、8位指数、23位小数
+        - 最大值 3.4x10^8
+        - 精度: 6位十进制数字
+    - 分类: 单精度、双精度、单扩展精度、双扩展精度
+- <float.h> 定义浮点类型特征的宏
 - C99中分为两种浮点类型
     - 实浮点类型: float、double和long double
     - 复数类型: float_Complex、double_Complex、 long double_Complex
@@ -56,11 +80,13 @@
     - %e、%g、%f表示单精度浮点数
     - %l表示双精度浮点数
     - %L表示扩展精度浮点数
+
 ## 字符类型
 - char类型变量可以用任意单字符赋值
 - 字符操作
-    - C语言中将字符当作小整数进行处理
+    - C语言中将字符当作小整数进行处理,字符实际上是int类型
 - 有符号字符和无符号字符
+    - 由于C语言并没有明确字符类型默认是有符号还是无符号，所以使用signed和unsigned修饰明确
     - 有符号类型 signed char 取值范围 -128~127
     - 无符号整数 unsigned char 取值范围 0~255
     - C89整值类型: 整数类型、字符类型、枚举类型
@@ -69,20 +95,35 @@
     - 整数类型和浮点类型统称算术类型
     - C89算术类型
         - 整值类型
-            - 字符数型char
+            - 字符数型
+                - char
             - 有符号整型 
-                - signed char、short int、int、long int、long long int
+                - signed char、short、int、long
             - 无符号整型 
-                - unsigned char、unsigned short int、unsigned int、unsigned long int、unsigned long long int
+                - unsigned char、unsigned short、unsigned int、unsigned long
             - 枚举类型
         - 浮点类型
-    - C99在C89的基础上新增了整型扩展类型和浮点复数类型
+            - float、double、long double
+    - C99算术类型
+        - 整值类型
+            - 字符数型
+                - char
+            - 有符号整型 
+                - signed char、short、int、long、long long、扩展
+            - 无符号整型 
+                - unsigned char、unsigned short、unsigned int、unsigned long、unsigned long long、扩展
+            - 枚举类型
+        - 浮点类型
+            - 实数浮点
+                - float、double、long double
+            - 复数类型
+                - float_Complex、double_Complex、long double_Complex
 - 转义序列
     - 用于表示非打印字符
     - 可以分为字符转义序列和数字转义序列
         - 字符转义序列
             - 可以直接用字符表示
-            - 问题: 无法表示基本的128哥ASCII字符之外的字符
+            - 问题: 无法表示基本的128个ASCII字符之外的字符
         - 数字转义序列
             - 可以表示任何字符
             - 转化过程
