@@ -23,3 +23,7 @@ int main(void)
     return 0;
     
 }
+/* 
+double类型的占位符，格式串转换说明是什么
+double对应lf但是，对于printf函数来说lf和f都可以
+*/

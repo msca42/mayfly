@@ -20,5 +20,5 @@ int main(void)
         }
     }
     printf("Your sentence contains %d vowels.",count);
-    
+    return 0;
 }

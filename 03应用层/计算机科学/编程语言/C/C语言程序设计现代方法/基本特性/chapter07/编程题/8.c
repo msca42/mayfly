@@ -25,7 +25,6 @@ int main(void)
         printf("Closest departure time is 9:45 p.m, arriving at  11:58 p.m");
     }
     
-    
-    
+    return 0;
 
 }
