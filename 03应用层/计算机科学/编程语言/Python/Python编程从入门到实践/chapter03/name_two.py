@@ -1,3 +1,4 @@
+# 3.2
 names = ['a','b','c']
 print(f"Hello, {names[0]}")
 print(f"Hello, {names[1]}")
