@@ -1,3 +1,5 @@
+"""一个用来表示汽车的类"""
+
 class Car:
     """一次模拟汽车的简单尝试"""
     def __init__(self,make,model,year):
@@ -8,16 +10,19 @@ class Car:
         self.odometer_reading = 0
     
     def get_descriptive_name(self):
-        """返回格式规范的描述性名称"""
+        """返回格式规范的描述性信息"""
         long_name = f"{self.year} {self.make} {self.make}"
         return long_name.title()
     
     def read_odometer(self):
-        """打印一个句子，指出汽车的行驶里程"""
+        """打印一条指出汽车行驶里程的消息"""
         print(f"This car has {self.odometer_reading} miles on it.")
     
     def update_odometer(self,mileage):
-        """将里程表读数设置为指定的值"""
+        """
+        将里程表读数设置为指定的值
+        拒绝将里程表往回调
+        """
         if mileage >= self.odometer_reading:
             self.odometer_reading = mileage
         else:
@@ -25,10 +30,7 @@ class Car:
     def increment_odometer(self,miles):
         """让里程表读数增加指定的量"""
         self.odometer_reading += miles
-        
-    def fill_gas_tank(self):
-        """汽车有邮箱"""
-        print(f"This car has a gas tank!")
+
 
 class Battery:
     """一次模拟电动汽车电池的简单尝试"""
@@ -48,11 +50,6 @@ class Battery:
             range = 225
         
         print(f"This car can go about {range} miles on a full charge.")
-    
-    def upgrade_battery(self):
-        if self.battery_size != 65:
-            self.battery_size = 65
-
 class ElectricCar(Car):
     """电动汽车的独特之处"""
 
@@ -60,17 +57,3 @@ class ElectricCar(Car):
         """初始化父类的属性"""
         super().__init__(make, model, year)
         self.battery = Battery()
-
-    
-    def fill_gas_tank(self):
-        """电动汽车没有邮箱"""
-        print(f"This car doesn't have a gas tank!")
-  
-# my_leaf  = ElectricCar('nissan','leaf',2024)
-# print(my_leaf.get_descriptive_name())
-# my_leaf.battery.describe_bettery()
-# my_leaf.battery.get_range()
-# my_leaf.fill_gas_tank()
-
-electricCar = ElectricCar('nissan','leaf',2024)
-electricCar.battery.get_range()
