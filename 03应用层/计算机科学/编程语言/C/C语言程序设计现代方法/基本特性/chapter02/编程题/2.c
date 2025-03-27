@@ -1,15 +1,21 @@
+// 计算球体体积
+// 载入标准输入输出库
 #include <stdio.h>
 
 // 宏定义圆周率
 #define PI  3.14f
 
+// main函数
 int main(void)
 {
+
+    // 声明初始化
     // 初始化半径 
     int radius = 10;
 
     int radius3 = radius * radius * radius;
     
+    // 体积计算
     // 体积公式
     float volume = (4.0f / 3.0f) * PI * radius3;
     

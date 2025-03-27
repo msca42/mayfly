@@ -15,10 +15,12 @@ int main(void)
     printf("Enter monthly payment: ");
     scanf("%f",&mpayment);
 
+    // 核心逻辑
     first_payment = loan - mpayment + loan * rate / 100 / 12;
     second_payment = (first_payment - mpayment)  + first_payment * rate / 100 / 12;
     third_payment = (second_payment - mpayment)  + second_payment * rate / 100 / 12;
 
+    // 输出
     printf("Balance remaining after first payment: %f\n", first_payment);
     printf("Balance remaining after second payment: %f\n", second_payment);
     printf("Balance remaining after third payment: %f\n", third_payment);

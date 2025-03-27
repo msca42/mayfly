@@ -8,7 +8,7 @@ int main(void)
     // printf("%f-%f-%f\n",x,y,z);
 
     float f;
-    int x,y;
+    int x, y;
     int z = x * y;
     printf("Uninitialize X = %d, Y = %d and Z = %d \n",x,y,z);
     printf("Uninitialize float f = %f \n",f);

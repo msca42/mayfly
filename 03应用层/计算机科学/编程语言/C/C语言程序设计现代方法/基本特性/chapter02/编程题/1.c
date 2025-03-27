@@ -1,7 +1,11 @@
+// 显示图形
+// 载入标准输入输出库
 #include <stdio.h>
 
+// main函数
 int main(void)
-{
+{   
+    // 打印符号
     printf("       *\n");
     printf("      *\n");
     printf("     *\n");
@@ -9,6 +13,7 @@ int main(void)
     printf(" * *\n");
     printf("  *\n");
 
+    // 返回值
     return 0;
 }
 

@@ -1,3 +1,9 @@
+/* 
+ 关键点在于输入格式和输出格式
+ 输入格式 2/17/2011
+ 输出格式 20110217
+
+*/
 #include <stdio.h>
 
 int main(void)
@@ -7,7 +13,7 @@ int main(void)
 
     // 输入赋值
     printf("Enter a date (mm/dd/yyyy):");
-    scanf("%d /%d /%d",&month, &day, &year);
+    scanf("%d/%d/%d",&month, &day, &year);
     
     // 输出
     printf("You entered the date %4d%02d%02d",year,month,day);

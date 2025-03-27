@@ -7,10 +7,10 @@ int main(void)
     
     // 提示输入
     printf("Enter an amount: ");
-    scanf("%f",&money);
+    scanf("%f", &money);
     
     // 输出
-    printf("With tax added: %.2f ", money*(1 + 0.05));
+    printf("With tax added: %.2f ", money * (1 + 0.05));
 
 }
 
