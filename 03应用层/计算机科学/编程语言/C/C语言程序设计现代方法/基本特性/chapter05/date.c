@@ -11,6 +11,7 @@ int main(void)
     printf("Enter date (mm/dd/yy)");
     scanf("%d /%d /%d",&month, &day, &year);
 
+    // 提示与选择
     printf("Dated this %d",day);
     switch (day)
     {

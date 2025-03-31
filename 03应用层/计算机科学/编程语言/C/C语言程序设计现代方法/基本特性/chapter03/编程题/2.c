@@ -13,7 +13,7 @@ int main(void)
     printf("Enter unit price: ");
     scanf("%f",&price);
     printf("Enter purchase date (mm/dd/yyyy): ");
-    scanf("%d / %d / %d",&month, &day, &year);
+    scanf("%d /%d /%d",&month, &day, &year);
 
 
     // 输出
