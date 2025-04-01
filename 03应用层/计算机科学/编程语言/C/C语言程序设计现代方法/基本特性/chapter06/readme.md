@@ -42,7 +42,3 @@
 - 除了末尾处的分号以外什么符号都没有
 
 
-## 总结
-- 循环和退出机制
-    - do、while、for循环
-    - continue、break、return、goto退出
