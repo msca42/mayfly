@@ -21,7 +21,7 @@ while guess != secret and tries < 6:
 
     tries = tries + 1
 
-# 结论
+# 次数结束之后的打印
 if guess == secret:
     print("Avast! Ye got it! Found my secret, ye did!")
 else:
