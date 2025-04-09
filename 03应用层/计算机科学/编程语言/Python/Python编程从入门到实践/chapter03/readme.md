@@ -21,7 +21,7 @@
 - sorted()函数
     - 临时排序
     - 参数reverse = True 逆序
-- reverse(): 反向打印列表
+- reverse(): 永久反向排列列表
 - len(): 获取列表长度
 
 ## 使用列表时避免索引错误
