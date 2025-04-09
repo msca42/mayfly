@@ -6,7 +6,7 @@ def print_models(unprinted_designs, completed_models):
         print(f"Printing model: {current_design}")
         completed_models.append(current_design)
 
-def show_complete_models(completed_model):
+def show_complete_models(completed_models):
     """显示打印好的所有模型"""
     # 显示打印好的所有模型
     print("\nThe following models have been printed:")
