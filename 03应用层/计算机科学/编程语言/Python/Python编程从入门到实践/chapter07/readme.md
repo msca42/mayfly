@@ -14,9 +14,10 @@
     - 方式二: 使用标志
     - 方式三: break
     - 方式四: continue
+
 ## 使用while循环处理列表和字典
 - for循环中不能修改列表，要使用while循环
 
 ## 小结
-- 输入函数input
+- 输入函数input()
 - 循环while
