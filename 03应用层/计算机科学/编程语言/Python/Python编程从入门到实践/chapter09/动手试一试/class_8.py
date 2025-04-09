@@ -7,6 +7,11 @@ class Privileges:
         for privilege in self.privileges:
             print(privilege)
 
+privileges = Privileges()
+
 class Admin:
      def __init__(self):
-          pass
+        self.privileges = privileges
+
+admin = Admin()
+admin.privileges.show_privileges()
