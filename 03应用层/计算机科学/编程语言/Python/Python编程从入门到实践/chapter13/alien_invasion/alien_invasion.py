@@ -106,11 +106,17 @@ class AlienInvasion:
         for bullet in self.bullets.copy():
             if bullet.rect.bottom <= 0:
                 self.bullets.remove(bullet)
+            
     def _create_fleet(self):
         """创建一个外星舰队"""
-        # 创建一个外星人
+        # 创建一个外星人,再不断添加，直到没有空间添加外星人为止
         alien = Alien(self)
-        self.aliens.add(alien)
+        alien_width = alien.rect.width
+        
+        current_x = alien_width
+        while current_x < (self.settings.screen_width - 2 * alien_width):
+            new_alien = Alien(self)
+            self.aliens.add(alien)
 
 if __name__ == '__main__':
     # 创建游戏实例并运行游戏
