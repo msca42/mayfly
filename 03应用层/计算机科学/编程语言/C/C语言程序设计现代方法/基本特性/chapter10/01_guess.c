@@ -56,7 +56,25 @@ void choose_new_secret_number(void)
 
 
 /************************************************************
- * choose_new_secret_number: Randomly selects a number      *
- *                           between 1 and MAX_NUMBER and   *
- *                           stores it in secret_number.    * 
+ * read_guesses: Repeatedly reads user guesses and tells    *
+ *               the user whether each guess is too low,    *
+ *               correct, prints the total number of        *
+ *               guesses and returns                        * 
  ************************************************************/
+void read_guesses(void)
+{
+    int guess, num_guesses = 0;
+
+    for(;;) {
+        num_guesses++;
+        printf("Enter guess: ");
+        scanf("%d", &guess);
+        if (guess == secret_number) {
+            printf("You won is %d guesses!\n\n", num_guesses);
+            return;
+        } else if (guess < secret_number) 
+            printf("Too low; try again.\n");
+        else 
+            printf("Too high; try again.\n");
+    }
+}
