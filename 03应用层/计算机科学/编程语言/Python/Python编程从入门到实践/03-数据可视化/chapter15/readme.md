@@ -7,6 +7,6 @@
 - Matplotlib
   - 一个数学绘图库
 - Plotly
-  - 可以用来分析掷骰子的结果
+  - 生成用于显示的图形
 
 ## 安装 Matplotlib
