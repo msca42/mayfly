@@ -1,24 +1,46 @@
+import java.util.Scanner;
+
 public class Main3 {
-    public static void main(String[] args) {
-        double x = 1.0 / 10;
-        double y = 1 - 9.0 / 10;
-        System.out.println(x);
-        System.out.println(y);
+  public static void main(String[] args) {
+    // 输入与输出
+    System.out.println("A,");
+    System.out.println("B,");
+    System.out.println("C.");
+    System.out.println();
+    System.out.println("END");
 
-        double r = Math.abs(x - y);
-        if (r < 0.00001) {
-        } else {
-        }
+    double d = 12900000;
+    System.out.println(d);
+    
+    d = 3.1415926;
+    System.out.printf("%.2f\n",d);
+    System.out.printf("%.4f\n",d);
 
-        int n = 5;
-        double d = 1.2 + 24.0 / n;
-        System.out.println(d);
+    int n = 12345000;
+    System.out.printf("n = %d, hex = %08x",n,n);
 
-        int n1 = (int) 12.3; // 12
-        int n2 = (int) 12.7; // 12
-        int n3 = (int) -12.7; // -12
-        int n4 = (int) (12.7 + 0.5); // 13
-        int n5 = (int) 1.2e20; // 2147483647
+    Scanner scanner =  new Scanner(System.in);
+    System.out.println("Input your name: ");
+    String name = scanner.nextLine(); 
+    System.out.println("Input your age: ");
+    int age  = scanner.nextInt();
+    System.out.printf("Hi, %s, you are %d\n", name,age);
 
+
+     n = 70;
+    if (n >= 90){
+      System.out.println("优秀");
+      System.out.println("恭喜你");
+    } else if (n >= 60){
+      System.out.println("及格了");
+    } else{
+      System.out.println("挂科了");
     }
+    System.out.println("END");
+
+
+    String s1 = "hello";
+    String s2 = "HELLO".toLowerCase();
+
+  }
 }
