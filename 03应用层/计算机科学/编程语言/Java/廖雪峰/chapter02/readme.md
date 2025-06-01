@@ -184,20 +184,48 @@
     - print() 不换行输出
     - printf() 格式化输出
   - 输入
-    - Scanner类 和System.in 标准输入流
+    - Scanner 类 和 System.in 标准输入流
     - nextLine()：读取一行输入并获取字符串
     - nextInt()：读取整数
 - if 条件判断
   - 格式: if(condition){ statement } else if(condition){ statement} else{
     statement
-  }
+    }
   - == 运算符
     - 判断标准类型表示值是否相等
     - 判断引用类型表示是否是同一个对象
 - switch 多重选择
+  - 格式 1：switch(variable) { case variable : statement1; break; default: statement2; break;}
+    - 当 case 没有 break，switch 具有穿透性
+  - 格式 2：switch(variable) { case variable -> statement1; default -> statement2}
+    - -> 在遇到多条语句中，使用{}括起来，不需要写 break，没有穿透性
+    - statement 可以变更为数值返回
+  - yield 关键字可以返回 switch 的返回值
 - while 循环
+  - 格式: while(条件表达式) {循环语句}
 - do while 循环
+  - 格式: do {执行循环语句} while(条件表达式);
 - for 循环
+  - 格式: for(初始化;循环条件;步进){statement}
+  - for each 循环
 - break 和 continue
+  - break 跳出一层循环
+  - continue 中断当前循环继续下一次循环
 
 ## 数组操作
+
+- 遍历数组
+  - 通过 for 循环可以遍历数组
+  - 通过 Arrays.toString()可以快速打印数组内容
+- 数组排序
+  - 常见排序: 冒泡排序、插入排序、快速排序
+  - 冒泡:
+    - 每一轮循环，将最大的数交换到末尾
+  - Java自带排序Arrays.sort()
+- 多维数组
+  - 数组中存在数组
+  - 遍历  
+    - 通过双层for循环
+    - Arrays.deepToString()
+- 命令行参数
+  - 通过String[] 数组接收
