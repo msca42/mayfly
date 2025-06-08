@@ -1,10 +1,10 @@
 # 什么是 JavaScript
 
-- 主要内容
-  - 介绍 Javascript 的起源：从哪里来、如何发展、以及现今的状况
-
-- 1995 年,JavaScript 问世
-- 最初用来解决 Perl 等服务器语言处理输入验证的问题，现在渗透到浏览器窗口及其内容
+- 本章内容
+  - 回顾 Javascript 历史
+  - JavaScript 简介
+  - Javascript 与 ECMAScript 的关系
+  - Javascript 的不同版本
 
 ## 简短的历史回顾
 
