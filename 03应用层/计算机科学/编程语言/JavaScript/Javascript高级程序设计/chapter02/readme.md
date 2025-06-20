@@ -1,16 +1,14 @@
 # HTML 中的 JavaScript
 
 - 主要内容
-  - 了解 Javascript 如何与 HTML 结合来创建动态网页
-  - 介绍在网页中嵌入 Javascript 的不同方式，还有 Javascript 的内容类型及其与\<script>元素的关系
-- 将 JavaScript 引入网页中,需要解决它和 HTML 的关系问题
+  ,,',',- 使用\<script>元素
 
-## <script>元素
+## \<script>元素
 
 - 通过 script 元素可以将 Javascript 引入 HTML 中
 - script 元素属性
   - async: 立即下载脚本,不妨碍页面其他操作,这个属性只对外部脚本文件有效
-  - charset: 指定字符集
+  - charset: 指定字符集, 通常忽略
   - crossorigin: 配置相关请求的 CORS
   - defer: 将脚本延迟到文档完全被解析之后再执行
   - integrity: 允许比对接收到的资源和指定的加密签名以验证子资源的完成行
