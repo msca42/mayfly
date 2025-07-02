@@ -1,9 +1,5 @@
 # 起步
 
-- 主要内容
-  - 如何在计算机中安装 Python
-  - 运行第一个程序--在屏幕上打印消息"Hello world"
-
 ## 编程环境简介
 
 - Python
@@ -40,9 +36,3 @@
 ## 从终端运行 Python 程序
 
 - 通过 python x.py 运行程序
-
-## 总结
-
-- 安装 Python
-- 安装 VS Code
-- 终端和独立文件运行 HelloWorld
