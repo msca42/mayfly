@@ -1,6 +1,8 @@
-/* Name: pun.c                */
-/* Purpose: Prints a bad pun. */
-/* Author: K. N. King         */
+/*****************************************  
+* Name: pun.c                            *
+* Purpose: Prints a bad pun.             *
+* Author: K. N. King                     *
+******************************************/
 // 包含C语言标准输入输出信息
 #include <stdio.h>
 

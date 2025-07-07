@@ -21,5 +21,6 @@ int main(void)
     // 输出
     printf("Celsius equivalent: %.1f\n", celsius);
 
+    // 正常返回
     return 0;
 }

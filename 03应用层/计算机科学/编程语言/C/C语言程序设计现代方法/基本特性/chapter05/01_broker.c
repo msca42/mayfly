@@ -26,6 +26,7 @@ int main(void)
         commission = 255.00f + .0009f  * value;
     }
 
+    // 最差情况
     if (commission < 39.00f){
         commission = 39.00f;
     }

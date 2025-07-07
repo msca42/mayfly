@@ -21,9 +21,9 @@ int main(void)
     third_payment = (second_payment - mpayment)  + second_payment * rate / 100 / 12;
 
     // 输出
-    printf("Balance remaining after first payment: %f\n", first_payment);
-    printf("Balance remaining after second payment: %f\n", second_payment);
-    printf("Balance remaining after third payment: %f\n", third_payment);
+    printf("Balance remaining after first payment: %.2f\n", first_payment);
+    printf("Balance remaining after second payment: %.2f\n", second_payment);
+    printf("Balance remaining after third payment: %.2f\n", third_payment);
 
     return 0;
 }
