@@ -1,0 +1,5 @@
+@import url("./5.css");
+span {
+  border: medium black dashed;
+  padding: 10px;
+}
