@@ -1,10 +1,5 @@
 # 什么是 JavaScript
 
-- 本章内容
-  - 回顾 Javascript 历史
-  - JavaScript 简介
-  - Javascript 与 ECMAScript 的关系
-  - Javascript 的不同版本
 
 ## 简短的历史回顾
 
