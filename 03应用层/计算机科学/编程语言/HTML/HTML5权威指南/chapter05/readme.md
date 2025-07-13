@@ -1,26 +1,59 @@
-# 初探JavaScript
-## 准备使用JavaScript
+# 初探 JavaScript
+
+## 准备使用 JavaScript
+
+- 在 HTML 中使用脚本的方法
+  - 内嵌脚本
+  - 外部脚本
+
 ## 使用语句
+
+- JS 的基本元素是语句
+
 ## 定义和使用函数
+
 - 定义带参数的函数
 - 定义会返回结果的函数
+
 ## 使用变量和类型
+
+- 定义变量使用 var 关键字
+  - 局部变量：定义在函数中的变量
+  - 全局变量：直接在 script 元素中
+- 弱类型语言
+  - 不同明确声明变量的类型就可以使用变量表示不同类型的值
 - 使用基本类型
+  - 基本类型包括字符串类型、数值类型和布尔类型
 - 创建对象
+  - 方式一： new Object()
+  - 方式二: 键值对字面量
+    - 键表示属性，值表示属性值或者函数
+    - 对象的函数称为方法
 - 使用对象
-## 使用JavaScript运算符
+  - 读取和修改对象属性值
+
+## 使用 JavaScript 运算符
+
 - 相等和等同运算符
 - 显式类型转换
+
 ## 使用数组
+
 - 使用数组字面量
 - 读取和修改数组内容
 - 枚举数组内容
 - 使用内置的数组方法
+
 ## 处理错误
-## 比较undefined和null值
-- 检查变量或属性是否为undefined或null
-- 区分null和undefined
-## 常用JavaScript工具
-- 使用JavaScript调试器
-- 使用JavaScript库
+
+## 比较 undefined 和 null 值
+
+- 检查变量或属性是否为 undefined 或 null
+- 区分 null 和 undefined
+
+## 常用 JavaScript 工具
+
+- 使用 JavaScript 调试器
+- 使用 JavaScript 库
+
 ## 小结
