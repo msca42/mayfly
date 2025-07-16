@@ -1,9 +1,9 @@
 # a
-numbers = 3
+number = 3
 cost = 35.27
 tip = 0.15
 
-each_cost  = cost *  (1 + tip) / numbers
+each_cost  = cost *  (1 + tip) / number
 print(each_cost)
 
 # b
