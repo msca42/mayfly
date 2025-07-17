@@ -1,10 +1,10 @@
-// highlight
+// 语法高亮
 function sayHello(name) {
   const greeting = `你好，${name}！`;
   return greeting;
 }
 
-// code repair
+// 代码补全
 function name(params) {
   document.ATTRIBUTE_NODE;
 }

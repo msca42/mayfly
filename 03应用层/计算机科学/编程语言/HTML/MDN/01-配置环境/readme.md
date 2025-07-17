@@ -22,16 +22,11 @@
 
 ## 浏览互联网
 
-- 网页: 一份能够显示在 Web 浏览器上的文档，也成为 page 页面，通常使用 HTML 编写
-  - 可以插入不同类型的资源
-    - 样式信息、脚本、多媒体
-- 网站: 一个由许多网页组合在一起的集合，网页以各种方式相互连接
+- 网页: 一份能够显示在 Web 浏览器上的文档，也称为 page 页面，通常使用 HTML 编写
+- 网站: 一个由许多网页组合在一起的集合，网页以各种方式相互连接，通常称为 site 站点
 - Web 服务器: 一个在互联网上托管网站的计算机
-  - 托管：所有网页和支持文件在计算机中可用
-- 搜索引擎
-  - 帮助你查找其他网页的网络服务
-  - 常见
-    - Google、Bing、Yahoo、DuckDuckGo、Yandex
+- 搜索引擎:帮助你查找其他网页的网络服务
+  - Google、Bing、Yahoo、DuckDuckGo、Yandexwq
 - Web 是如何工作的
   - 浏览器从 Web 服务器中通过 HTTP 协议请求资源
   - 请求成功，Web 服务器将包含所需资源的 HTTP 响应返回给浏览器
@@ -72,8 +67,8 @@
 - 推荐使用 Windows 的 WSL 安装 Linux 系统
 - 基本命令
   - cd、ls、mkdir、touch、cp、mv、rm、curl、grep、wc
-- 可以在glitch.com上测试命令
-- 关于特定终端命令的的网站tldr.sh 类似MDN
-- 安装node
-  - 执行npm -v时注意powershell的执行策略
-- 安装prettier
+- 可以在 glitch.com 上测试命令
+- 关于特定终端命令的的网站 tldr.sh 类似 MDN
+- 安装 node
+  - 执行 npm -v 时注意 powershell 的执行策略
+- 安装 prettier

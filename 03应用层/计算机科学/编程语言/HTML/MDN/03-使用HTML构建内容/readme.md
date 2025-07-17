@@ -4,13 +4,7 @@
 
 - HTML 是一种用来告知浏览器如何组织页面的标记语言，由元素组成
 - 元素可以包围或标记不同的内容，使其以某种方式呈现或工作
-
-```html
-My cat is very grumpy
-
-<p>My cat is very grumpy</p>
-```
-
+- HTML 存在于扩展名为 html 的文本文件中，这种文件被称为 HTML 文档
 - 元素
   - 组成:开始标签、内容、结束标签
   - 嵌套:将一个元素置于另一个元素中
@@ -18,26 +12,9 @@ My cat is very grumpy
     - 块级元素
     - 内联元素
   - 空元素: 只有一个标签的元素
-
-```html
-<em>刀枪剑戟 斧钺钩叉</em>
-<p>My cat is <strong>very</strong> grumpy.</p>
-
-<em>第一</em><em>第二</em><em>第三</em>
-
-<p>第四</p>
-<p>第五</p>
-<p>第六</p>
-
-<img
-  src="https://roy-tian.github.io/learning-area/extras/getting-started-web/beginner-html-site/images/firefox-icon.png"
-  alt="Firefox 图标"
-/>
-```
-
 - 属性
   - 元素的特质，能够提供额外的信息
-  - 组成: 属性名 = 属性值
+  - 组成: 属性名 = "属性值"
   - 布尔属性: 属性名和属性值相同的属性
 
 ```HTML
