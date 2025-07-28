@@ -17,7 +17,7 @@ my_ball = pygame.image.load("beach_ball.png")
 x = 50
 y = 50
 
-# 块移 从一个表面复制到另一个表面
+# 块移 从内存复制到另一个表面
 screen.blit(my_ball, [x, y])
 
 # 切换图形的最新版本(刷新)

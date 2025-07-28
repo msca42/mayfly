@@ -10,4 +10,5 @@ class Ball:
         
 
 myBall = Ball("red","small","down")
+# print(myBall.__str__)
 print(myBall)

@@ -30,6 +30,12 @@ class Ball(pygame.sprite.Sprite):
         self.rect = newpos
 
 my_ball = Ball('beach_ball.png',[10,0],[20,20])
+
+# 重复按键
+delay = 100
+interval = 50
+pygame.key.set_repeat(delay,interval)
+
 running = True
 while running:
     # 循环事件队列
@@ -41,6 +47,8 @@ while running:
                 my_ball.rect.top = my_ball.rect.top - 10
             elif event.key == pygame.K_DOWN:
                 my_ball.rect.top = my_ball.rect.top  + 10
+        elif event.type == pygame.MOUSEMOTION:
+            my_ball.rect.center = event.pos
     clock.tick(30)
     screen.blit(background,(0,0))
     my_ball.move()

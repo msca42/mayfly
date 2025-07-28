@@ -11,7 +11,7 @@ screen = pygame.display.set_mode([640,480])
 screen.fill([255,255,255])
 
 for i in range(100):
-    # 随机数
+    # 参数随机数
     width = random.randint(0,250)
     height = random.randint(0,100)
     top = random.randint(0,400)
@@ -22,6 +22,7 @@ for i in range(100):
     # 线宽
     line_width = random.randint(1,3)
     # 画一个矩形
+    # 通过将RGB修改为具体的color名赋予线条颜色
     pygame.draw.rect(screen,color,[left,top,width,height],line_width)
 
 # 切换图形的最新版本(刷新)

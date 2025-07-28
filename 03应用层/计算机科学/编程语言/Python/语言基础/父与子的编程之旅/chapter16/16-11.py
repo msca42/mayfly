@@ -13,7 +13,7 @@ screen.fill([255,255,255])
 # 加载图片
 my_ball = pygame.image.load("beach_ball.png")
 
-# 块移 从一个表面复制到另一个表面
+# 块移 从内存复制到另一个表面
 screen.blit(my_ball, [50, 50])
 
 # 切换图形的最新版本(刷新)

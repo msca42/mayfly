@@ -7,9 +7,11 @@ class Ball(pygame.sprite.Sprite):
     def __init__(self, image_file,location):
         # 父类初始化
         pygame.sprite.Sprite.__init__(self)
+        # 加载图片
         self.image = pygame.image.load(image_file)
-        # ? 矩形
+        # 规定动画精灵的矩形边界
         self.rect = self.image.get_rect()
+        # 设置球的初始位置
         self.rect.left, self.rect.top = location
 
 # 宽 高

@@ -9,6 +9,7 @@ screen = pygame.display.set_mode([640,480])
 background = pygame.Surface(screen.get_size())
 # 填充白色
 background.fill([255,255,255])
+
 # 帧
 clock = pygame.time.Clock()
 # Ball类
@@ -20,7 +21,6 @@ class Ball(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.left, self.rect.top = location
         self.speed = speed
-    
     # move方法
     def move(self):
         if self.rect.left <= screen.get_rect().left or \
@@ -49,6 +49,5 @@ while running:
     my_ball.move()
     screen.blit(my_ball.image, my_ball.rect)
     pygame.display.flip()
-
 pygame.quit()
     

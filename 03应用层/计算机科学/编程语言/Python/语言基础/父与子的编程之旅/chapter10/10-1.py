@@ -11,6 +11,7 @@ class SkierClass(pygame.sprite.Sprite): # 创建滑雪者
     
     # 初始化 image rect  rect.center angle
     def __init__(self):
+        # 父类初始化
         pygame.sprite.Sprite.__init__(self)
         self.image = pygame.image.load("skier_down.png")
         self.rect = self.image.get_rect()

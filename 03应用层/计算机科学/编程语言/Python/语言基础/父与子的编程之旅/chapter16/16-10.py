@@ -10,10 +10,10 @@ screen = pygame.display.set_mode([640,480])
 # 填充屏幕 白色
 screen.fill([255,255,255])
 
-# 加载图片
+# 加载图片，创建图片Surface对象
 my_ball = pygame.image.load("beach_ball.png")
 
-# 块移 从一个表面复制到另一个表面
+# 块移 从内存复制到副屏幕
 screen.blit(my_ball, [50, 50])
 
 # 切换图形的最新版本(刷新)

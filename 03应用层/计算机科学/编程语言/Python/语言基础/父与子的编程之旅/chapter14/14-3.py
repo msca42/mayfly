@@ -8,6 +8,7 @@ class Ball:
         if self.direction == "down":
             self.direction = "up"
         
+        
 
 myBall = Ball("red","small","down")
 

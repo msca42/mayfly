@@ -12,7 +12,7 @@ screen.fill([255,255,255])
 
 for x in range(0,640):
     y = int(math.sin(x/640 * 4 * math.pi) * 200  + 240)
-    # 画一个矩形
+    # 使用矩形画一个点
     pygame.draw.rect(screen,[0,0,0],[x,y,1,1],1)
 
 # 切换图形的最新版本(刷新)

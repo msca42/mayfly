@@ -9,7 +9,7 @@ class Ball(pygame.sprite.Sprite):
         # 父类初始化
         pygame.sprite.Sprite.__init__(self)
         self.image = pygame.image.load(image_file)
-        # ? 矩形
+        # 设置矩形信息
         self.rect = self.image.get_rect()
         self.rect.left, self.rect.top = location
         self.speed = speed
