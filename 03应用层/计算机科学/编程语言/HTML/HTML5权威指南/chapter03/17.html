@@ -1,20 +1,21 @@
+<!--  全局  JS 调用class 属性 -->
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Example</title>
-    </head>
-    <body>
-        <a class="class1 class2" href="http://apress.com">Apress Web site</a>
-        <p/>
-        <a class="class2 otherclass" href="http://w3c.org">W3C web site</a>
-        <script>
-            var elems = document.getElementsByClassName("otherclass");
-            for (i = 0; i< elems.length;i++){
-                var x = elems[i];
-                x.style.border = "thin solid black";
-                x.style.backgroundColor = "white";
-                x.style.color = "black";
-            }
-        </script>
-    </body>
+  <head>
+    <title>Example</title>
+  </head>
+  <body>
+    <a class="class1 class2" href="http://apress.com">Apress Web site</a>
+    <p />
+    <a class="class2 otherclass" href="http://w3c.org">W3C web site</a>
+    <script>
+      var elems = document.getElementsByClassName("otherclass");
+      for (i = 0; i < elems.length; i++) {
+        var x = elems[i];
+        x.style.border = "thin solid black";
+        x.style.backgroundColor = "white";
+        x.style.color = "black";
+      }
+    </script>
+  </body>
 </html>

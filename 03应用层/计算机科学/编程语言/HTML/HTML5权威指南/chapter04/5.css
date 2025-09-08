@@ -1,9 +1,10 @@
+/* 独立的css文件 */
 a {
-    background-color: grey;
-    color: white;
+  background-color: grey;
+  color: white;
 }
 
 span {
-    border: thin black solid;
-    padding: 10px;
+  border: thin black solid;
+  padding: 10px;
 }
