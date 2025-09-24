@@ -1,0 +1,25 @@
+<!-- 使用null and undefined -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example</title>
+  </head>
+  <body>
+    <script>
+      var myData = {
+        name: "Adam",
+      };
+
+      document.writeln("Var: " + myData.weather);
+      document.writeln("Prop: " + ("weather" in myData));
+
+      myData.weather = "sunny";
+      document.writeln("Var: " + myData.weather);
+      document.writeln("Prop: " + ("weather" in myData));
+
+      myData.weather = null;
+      document.writeln("Var: " + myData.weather);
+      document.writeln("Prop: " + ("weather" in myData));
+    </script>
+  </body>
+</html>
