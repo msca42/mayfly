@@ -36,11 +36,11 @@
 
 - HTML 文档
   - <!DOCTYPE html> 文档类型声明
-  - <html> 根元素，包裹页面所有内容
-  - <head> 包含在html页面但不显示的内容
-  - <meta> 不能由其他HTML元相关元素表示的元数据
-  - <title> 页面标题
-  - <body> 所有显示在页面上的内容
+  - \<html> 根元素，包裹页面所有内容
+  - \<head> 包含在 html 页面但不显示的内容
+  - \<meta> 不能由其他 HTML 元相关元素表示的元数据
+  - \<title> 页面标题
+  - \<body> 所有显示在页面上的内容
 
 ```html
 <!DOCTYPE html>
@@ -57,8 +57,8 @@
 
 - 空白处理
   - HTML 对于空白，会将连续出现的空白字符减少为一个单独的空白符
-- 实体引用
-  - 对于在 HTML 中的特殊字符，如果需要在页面以原本形式展示，需要使用特殊的编码，也就是字符引用
+- 字符引用
+  - 对于在 HTML 中的特殊字符，如果需要在页面以原本形式展示，需要使用成为字符引用的特殊编码
   - 每个字符引用以符号&开头，以分号；结束
 - 注释
   - 将需要注释的内容包裹在<!-- -->中
@@ -68,6 +68,7 @@
 - html 元信息包含在 head 元素中，包含页面加载后不会在浏览器中显示的元信息
 - title 元素
   - 表示整个 HTML 文档的标题
+  - 也可网页的书签名
 - meta 元素
   - charset 属性可以指定文档中的字符编码
   - name 属性指定 meta 元素的类型，说明该元素包含了什么类型的信息
@@ -83,29 +84,6 @@
   - Javascript: 使用 script 元素
     - src 属性指向脚本路径
     - defer 属性表示解析 HTML 之后再加载脚本
-  ```html
-  <!DOCTYPE html>
-  <html lang="en-US">
-    <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width" />
-      <title>&lt;title&gt; element</title>
-      <meta name="author" content="Chris Mills" />
-      <meta
-        name="description"
-        content="The MDN Web Docs Learning Area aims to provide
-        complete beginners to the Web with all they need to know to get
-        started with developing web sites and applications."
-      />
-      <link rel="stylesheet" href="style.css" />
-      <script src="script.js" defer></script>
-    </head>
-    <body>
-      <h1>&lt;h1&gt; element</h1>
-      <p>Japanese example: ご飯が熱い。</p>
-    </body>
-  </html>
-  ```
 
 ### HTML 的标题和段落
 
@@ -471,8 +449,7 @@
     - 属性
       - action：指定提交的表单数据将发送到哪个页面进行处理
       - method: 指定将表单数据传递到服务器时，使用的数据传输方法
-- 其他控件
-  -
+- ## 其他控件
 
 ```HTML
 <!doctype html>
