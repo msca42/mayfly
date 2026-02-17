@@ -1,6 +1,6 @@
 // 两个函数
 #include <stdio.h>
-void butler(void);
+void butler(void);  /* 函数原型 */ 
 int main(void)
 {
 
@@ -11,7 +11,7 @@ int main(void)
     return 0;
 }
 
-void butler(void)
+void butler(void) /* 函数定义 */
 {
     printf("You rang, sir?\n");
 }
