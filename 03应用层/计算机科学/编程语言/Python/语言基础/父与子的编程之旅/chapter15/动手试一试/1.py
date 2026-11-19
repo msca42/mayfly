@@ -1,3 +1,0 @@
-from  printName import *
-
-printName()

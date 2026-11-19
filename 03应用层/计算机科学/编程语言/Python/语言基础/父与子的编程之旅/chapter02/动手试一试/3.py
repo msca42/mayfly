@@ -1,2 +1,0 @@
-name = "mayfly"
-print(name)
